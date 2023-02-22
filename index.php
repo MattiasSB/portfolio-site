@@ -20,7 +20,7 @@
 
         </section>
     </main>
-    <script src="/scripts/menu.js">
+    <script src="/scripts/menuMobile.js">
     </script>
 </body>
 </html>

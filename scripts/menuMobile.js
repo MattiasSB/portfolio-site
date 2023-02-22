@@ -1,3 +1,4 @@
+
 const menuUnderscore = document.querySelector(".menu__underscore");
 const menuItems = document.querySelector(".menu__items");
 const menuColor = document.querySelector(".menu__color");
@@ -41,7 +42,7 @@ window.addEventListener("resize", () => {
             item.style.visibility = "visible";
         })
     }
-    else if (screenWidth < 940){
+    else if (screenWidth < 940 && menuIsOpen == false){
         menuUnderscore.style.right = "1.875em";
         xLineBottom.style.visibility = "visible";
         allMenuItems.forEach(item =>{
