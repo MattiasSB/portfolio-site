@@ -1,48 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Staatliches&display=swap');
 
-@import url("/css/variables.css");
-
-/*--------------------------------------------------
-Variables
---------------------------------------------------*/
+@use "fonts";
+@use "reset";
+@use "variables";
+@use "menu";
 
 /*--------------------------------------------------
 Fonts
 --------------------------------------------------*/
 
-.font__staatliches {
-    font-family: 'Staatliches', cursive;
-    letter-spacing: 0.06em;
+.font {
+
+    &__staatliches {
+        font-family: 'Staatliches', cursive;
+        letter-spacing: 0.06em;
+    }
+    &__spacegrotesk--400 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+    }
+    &__spacegrotesk--700 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+    }
+
+
 }
 
-.font__spacegrotesk--400 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.06em;
+.text {
+    &__xl {
+        font-size: 6em;
+    }
+    &__orange {
+        color: var(--orange);
+    }
+    &__black {
+        color: var(--black);
+    }
+    &__white {
+        color: var(--white);
+    }
 }
 
-
-.font__spacegrotesk--700 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-}
-
-.text__xl{
-    font-size: 6em;
-}
-
-.text__orange {
-    color: var(--orange);
-}
-
-.text__black {
-    color: var(--black);
-}
-
-.text__white {
-    color: var(--white);
-}
 
 /*--------------------------------------------------
 Global
@@ -113,120 +113,6 @@ Helper
         visibility: hidden;
     }
 
-/*--------------------------------------------------
-Menu
---------------------------------------------------*/
-
-.menu__container {
-    max-width: 65.375em;
-}
-
-.menu__logo {
-    height: 2.5em;
-    width: 2.5em;
-}
-
-.menu__height {
-    height: 5.5em;
-}
-
-.menu__color {
-    background: transparent;
-}
-
-.menu__color li a {
-    color: var(--orange);
-    text-decoration: none;
-}
-
-.menu__fixed {
-    position: fixed;
-    z-index: 1;
-}
-
-.menu__underscore--position {
-    right: 14.1em;
-    top: 2.5em;
-    cursor: pointer;
-}
-
-/*-- open menu classes --*/
-
-.menu__underscore--visibility {
-    visibility: hidden;
-}
-
-.menu__open--item {
-    font-size: 4em;
-    padding: 0.5em;
-}
-
-.menu__open--logo {
-    position: absolute;
-    top: 1.825em;
-    left: 0;
-}
-
-/*-- Menu to X animation --*/
-
-.menu__underscore--animation--x  {
-    animation: rotateX 0.3s ease-in-out forwards;
-}
-
-.menu__underscore--animation--rx  {
-    animation: rotateX__reverse 0.3s ease-in-out forwards;
-}
-
-@keyframes rotateX {
-    0% {
-        d: path("M9.61798 2.34998L45.618 2.34998");
-    }
-    100%{
-        d: path("M2 33.8442L39.4192 2.15615");
-        scale: 0.75;
-    }
-}
-
-@keyframes rotateX__reverse {
-    0% {d: path('M1.61804 16.35L45.2038 16.35');
-    }
-    100%{
-        d: path("M2.19238 2L38.8302 33.6378");
-        scale: 0.75;
-    }
-}
-
-/*-- X to menu animation --*/
-
-.reverse__menu__underscore--animation--x  {
-    animation: reverse__rotateX__reverse 0.3s ease-in-out forwards;
-}
-
-.reverse__menu__underscore--animation--rx  {
-    animation: reverse__rotateX 0.3s ease-in-out forwards;
-}
-
-@keyframes reverse__rotateX {
-    0%{
-        d: path("M2 33.8442L39.4192 2.15615");
-        scale: 0.75;
-    }
-    100% {
-        d: path("M9.61798 2.34998L45.618 2.34998");
-        scale: 1;
-    }
-}
-
-@keyframes reverse__rotateX__reverse {
-    0%{
-        d: path("M2.19238 2L38.8302 33.6378");
-        scale: 0.75;
-    }
-    100% {
-        d: path('M1.61804 16.35L45.2038 16.35');
-        scale: 1;
-    }
-}
 
 /*--------------------------------------------------
 Spacing
