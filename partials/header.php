@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <!--Flickity for side scrolls-->
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Home - Mattias Bellan</title>
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
-    <header>
+<header>
         <nav class="w__100 menu__color menu__fixed blend__difference">
             <div class="menu__container mx__auto">
                 <div class="flex justify__between items__center menu__height position__relative">
@@ -51,18 +39,3 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="flex intro__height w__screen justify__center item__intro">
-            <div class="position__relative intro">
-                <h1 class="font__staatliches intro__text intro__text--black"><span class="intro__text--orange">Developing</span> Design Into <br> Digital <span class="intro__text--white">Solutions</span></h1>
-                <img class="position__absolute rounded intro__image filter__shadow" src="/img/forrest__photo.jpg" alt="" height="375" width="625">
-            </div >
-        </section>
-        <section class="h__screen">
-
-        </section>
-    </main>
-    <script src="/scripts/menu.js">
-    </script>
-</body>
-</html>
