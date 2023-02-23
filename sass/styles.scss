@@ -1,8 +1,9 @@
+@import "fonts";
+@import "reset";
+@import "variables";
+@import "menu";
 
-@use "fonts";
-@use "reset";
-@use "variables";
-@use "menu";
+
 
 /*--------------------------------------------------
 Fonts
@@ -59,26 +60,37 @@ Helper
 --------------------------------------------------*/
     .flex {
         display: flex;
-    }
-
-    .flex__cols {
-        flex-direction: column;
+        &__cols {
+            flex-direction: column;
+        }
     }
 
     .items__center {
         align-items: center;
     }
 
-    .justify__center {
-        justify-content: center;
+    .justify {
+        &__center {
+            justify-content: center;
+        }
+        &__ends {
+            justify-content: flex-end;
+        }
+        &__between {
+            justify-content: space-between;
+        }
     }
 
-    .justify__ends {
-        justify-content: flex-end;
-    }
-
-    .justify__between {
-        justify-content: space-between;
+    .position {
+        &__relative {
+            position: relative;
+        }
+        &__absolute {
+            position: absolute;
+        }
+        &__fixed {
+            position: fixed;
+        }
     }
 
     .inline__block {
@@ -87,18 +99,6 @@ Helper
 
     .blend__difference {
         mix-blend-mode: difference;
-    }
-
-    .position__relative {
-        position: relative;
-    }
-
-    .position__absolute {
-        position: absolute;
-    }
-
-    .position__fixed {
-        position: fixed;
     }
 
     .rounded {
@@ -118,17 +118,21 @@ Helper
 Spacing
 --------------------------------------------------*/
 
-.m__30 {
-    margin: 1.875em;
+.m {
+    &__30 {
+        margin: 1.875em;
+    }
+    &x__30 {
+        margin: 0 1.875em;
+    }
+    &x__auto {
+        margin: 0 auto;
+    }
+    &b__10 {
+        margin-bottom: 10em;
+    }
 }
 
-.mx__30 {
-    margin: 0 1.875em;
-}
-
-.mx__auto {
-    margin: 0 auto;
-}
 
 .w__screen {
     width: 100vw;
@@ -142,138 +146,10 @@ Spacing
     width: 100%;
 }
 
-.mb__10 {
-    margin-bottom: 10em;
+.max__width--container {
+    max-width: 1046px;
 }
 
-/*--------------------------------------------------
-Intro
---------------------------------------------------*/
-
-.intro__image {
-    top: 6em;
-    left: 18.5em;
-    z-index: -1;
-}
-
-.intro__text {
-    font-size: 6em;
-}
-
-.intro__text--orange {
-    color: var(--orange);
-}
-
-.intro__text--black {
-    color: var(--black);
-}
-
-.intro__text--white {
-    color: var(--white);
-}
-
-.intro {
-    margin-bottom: 10em;
-}
-
-.intro__height {
-    height: 100vh;
-}
-
-.item__intro {
-    align-items: center;
-}
-
-@media (max-width: 940px) {
-    /*-- menu media query --*/
-    .menu__items {
-        visibility: hidden;
-    }
-
-    .menu__fixed {
-        position: fixed;
-        top: 0;
-    }
-
-    .menu__height {
-        height: 100vh;
-    }
-
-    .menu__underscore--visibility {
-        visibility: visible;
-    }
-
-    .menu__underscore--position {
-        right: 1.875em;
-    }
-
-    .menu__logo {
-        position: absolute;
-        height: 2.5em;
-        width: 2.5em;
-        top: 2em;
-    }
-    /*-- Intro media query --*/
-
-    .intro {
-        margin-bottom: 0;
-    }
-
-    .intro__height {
-        height: 65vh;
-    }
-
-    .intro__text {
-        font-size: 3em;
-        margin-right: 0;
-        text-align: center;
-        margin-top: 5em;
-    }
-    .intro__image {
-        height: 375px;
-        width: 525px;
-        top: -0.6em;
-        left: -1.2em;
-    }
-
-    .intro__text--orange {
-        color: var(--orange);
-    }
-    
-    .intro__text--black {
-        color: var(--white);
-    }
-    
-    .intro__text--white {
-        color: var(--orange);
-    }
-
-    .item__intro {
-        align-items: flex-end;
-    }
-
-}
-
-@media (max-width: 640px) {
-
-    .intro__height {
-        height: 50vh;
-    }
-
-    .item__intro {
-        align-items: flex-end;
-    }
-
-    .intro__text {
-        font-size: 2em;
-        margin-right: 0;
-        text-align: center;
-        margin-top: 5em;
-    }
-    .intro__image {
-        height: 250px;
-        width: 350px;
-        top: -0.6em;
-        left: -1.2em;
-    }
-}
+// /*--------------------------------------------------
+// Intro
+// --------------------------------------------------*/

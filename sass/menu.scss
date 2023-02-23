@@ -1,58 +1,65 @@
-/*--------------------------------------------------
-Menu
---------------------------------------------------*/
+$breakpoint__tablet: 940px;
+$black: #231F20;
+$orange: #FF825E;
 
-.menu__container {
-    max-width: 65.375em;
+.menu {
+    display: flex;
+    justify-content: space-between;
+    mix-blend-mode: difference;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.menu__logo {
+.menu ul{
+    visibility: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu a svg {
     height: 2.5em;
     width: 2.5em;
+    margin: 1.825em;
 }
 
-.menu__height {
-    height: 5.5em;
-}
-
-.menu__color {
-    background: transparent;
-}
-
-.menu__color li a {
-    color: var(--orange);
-    text-decoration: none;
-}
-
-.menu__fixed {
-    position: fixed;
-    z-index: 1;
-}
-
-.menu__underscore--position {
-    right: 14.1em;
-    top: 2.5em;
+.menu .underlines {
+    position: absolute;
+    right: 0em;
+    margin: 1.825em;
+    top: 0.4em;
     cursor: pointer;
 }
 
-/*-- open menu classes --*/
-
-.menu__underscore--visibility {
-    visibility: hidden;
-}
-
-.menu__open--item {
-    font-size: 4em;
-    padding: 0.5em;
-}
-
-.menu__open--logo {
+.menu__active {
+    background: $black;
+    height: 100vh;
+    mix-blend-mode: normal;
     position: absolute;
-    top: 1.825em;
-    left: 0;
+    z-index: 1;
 }
 
-/*-- Menu to X animation --*/
+.menu__active ul {
+    position: absolute;
+    z-index: 3;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__active li {
+    margin: 1.825em;
+}
+
+.menu__active ul li a{
+    visibility: visible;
+    color: $orange;
+    text-decoration: none;
+    font-size: 4em;
+}
 
 .menu__underscore--animation--x  {
     animation: rotateX 0.3s ease-in-out forwards;
@@ -110,5 +117,33 @@ Menu
     100% {
         d: path('M1.61804 16.35L45.2038 16.35');
         scale: 1;
+    }
+}
+
+
+@media (min-width: $breakpoint__tablet) {
+    .menu {
+        position: fixed;
+        width: screen;
+    }
+    .menu ul{
+        visibility: visible;
+    }
+    .menu ul li {
+        display: inline-block;
+        margin: 1.825em;
+    }
+    .menu ul li a { 
+        color: $orange;
+        text-decoration: none;
+    }
+
+ 
+    #line__bottom {
+        visibility: hidden;
+    }
+
+    .menu .underlines {
+        right: 11.6em;
     }
 }
