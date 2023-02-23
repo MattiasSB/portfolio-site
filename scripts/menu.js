@@ -26,11 +26,11 @@ window.addEventListener("scroll", ()=>{
 window.addEventListener("resize", () => {
     screenWidth = window.innerWidth;
     if(screenWidth > 940){
-        closeMenuMobile();
+        closeMenu();
     }
 });
 /*--------------------------- Mobile Menu  ----------------------------- */
-function closeMenuMobile() {
+function closeMenu() {
     if (menuIsOpen === true){
         menuIsOpen = false;
         body.style.overflow = "visible";
@@ -45,7 +45,7 @@ function closeMenuMobile() {
     }
 }
 
-function openMenuMobile() {
+function openMenu() {
     if (menuIsOpen == false){
         menuIsOpen = true;
         menuActiveTarget.classList.add("menu__active");
@@ -62,15 +62,15 @@ function openMenuMobile() {
 
 menuUnderscore.addEventListener("click", () => {
     if (menuIsOpen == false && screenWidth < 940) {
-        openMenuMobile();
+        openMenu();
     }
     else if (menuIsOpen == true && screenWidth < 940){
-        closeMenuMobile();
+        closeMenu();
     }
     else if (menuIsOpen == false && screenWidth > 940 && scrollPosition > 48) {
-        openMenuMobile();
+        openMenu();
     }
-    else if (menuIsOpen == true && screenWidth > 940 && scrollPosition > 48){
-        closeMenuMobile();
+    else if (menuIsOpen == true && screenWidth > 940){
+        closeMenu();
     }
 });

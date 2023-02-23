@@ -31,7 +31,7 @@ Fonts
 
 .text {
     &__xl {
-        font-size: 6em;
+        font-size: 2em;
     }
     &__orange {
         color: $orange;
@@ -41,6 +41,9 @@ Fonts
     }
     &__white {
         color: $white;
+    }
+    &__center {
+        text-align: center;
     }
 }
 
@@ -58,66 +61,60 @@ body {
 /*--------------------------------------------------
 Helper
 --------------------------------------------------*/
-    .flex {
-        display: flex;
-        &__cols {
-            flex-direction: column;
-        }
+.flex {
+    display: flex;
+    &__cols {
+        flex-direction: column;
     }
+}
 
-    .items__center {
-        align-items: center;
+.items__center {
+    align-items: center;
+}
+
+.justify {
+    &__center {
+        justify-content: center;
     }
-
-    .justify {
-        &__center {
-            justify-content: center;
-        }
-        &__ends {
-            justify-content: flex-end;
-        }
-        &__between {
-            justify-content: space-between;
-        }
+    &__ends {
+        justify-content: flex-end;
     }
-
-    .position {
-        &__relative {
-            position: relative;
-        }
-        &__absolute {
-            position: absolute;
-        }
-        &__fixed {
-            position: fixed;
-        }
+    &__between {
+        justify-content: space-between;
     }
+}
 
-    .inline__block {
-        display: inline-block;
+.position {
+    &__relative {
+        position: relative;
     }
-
-    .blend__difference {
-        mix-blend-mode: difference;
+    &__absolute {
+        position: absolute;
     }
-
-    .rounded {
-        border-radius: 1em;
+    &__fixed {
+        position: fixed;
     }
+}
 
-    .filter__shadow {
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    }
+.inline__block {
+    display: inline-block;
+}
 
-    .visibility__hidden {
-        visibility: hidden;
-    }
+.blend__difference {
+    mix-blend-mode: difference;
+}
 
-/*--------------------------------------------------
-Grid
---------------------------------------------------*/
+.rounded {
+    border-radius: 1em;
+}
 
+.filter__shadow {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 
+.visibility__hidden {
+    visibility: hidden;
+}
 
 /*--------------------------------------------------
 Spacing
@@ -158,3 +155,9 @@ Spacing
 // /*--------------------------------------------------
 // Intro
 // --------------------------------------------------*/
+
+@media (min-width: $breakpoint__tablet) {
+    .text__xl {
+        font-size: 6em;
+    }
+}

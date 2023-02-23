@@ -59,8 +59,8 @@ table {
 .menu {
   display: flex;
   justify-content: space-between;
-  mix-blend-mode: difference;
   position: fixed;
+  z-index: 2;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -88,8 +88,6 @@ table {
 }
 
 .menu__active {
-  mix-blend-mode: normal;
-  position: fixed;
   opacity: 90%;
   background: #231F20;
   height: 100vh;
@@ -208,7 +206,7 @@ table {
     transform: translateX(100vw);
   }
   .menu__scroll .menu .underlines {
-    right: 1.825em;
+    right: 0;
   }
   .menu__scroll #line__bottom {
     visibility: visible;
@@ -233,7 +231,7 @@ Fonts
 }
 
 .text__xl {
-  font-size: 6em;
+  font-size: 2em;
 }
 .text__orange {
   color: #FF825E;
@@ -243,6 +241,9 @@ Fonts
 }
 .text__white {
   color: #F1F0F0;
+}
+.text__center {
+  text-align: center;
 }
 
 /*--------------------------------------------------
@@ -307,9 +308,6 @@ Helper
 }
 
 /*--------------------------------------------------
-Grid
---------------------------------------------------*/
-/*--------------------------------------------------
 Spacing
 --------------------------------------------------*/
 .m__30 {
@@ -339,6 +337,12 @@ Spacing
 
 .max__width--container {
   max-width: 1046px;
+}
+
+@media (min-width: 940px) {
+  .text__xl {
+    font-size: 6em;
+  }
 }
 
 /*# sourceMappingURL=styles.min.css.map */

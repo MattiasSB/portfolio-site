@@ -6,8 +6,8 @@
 .menu {
     display: flex;
     justify-content: space-between;
-    mix-blend-mode: difference;
     position: fixed;
+    z-index: 2;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -35,8 +35,6 @@
 }
 
 .menu__active {
-    mix-blend-mode: normal;
-    position: fixed;
     opacity: 90%;
     background: #231F20;
     height: 100vh;
@@ -168,7 +166,7 @@
     }
 
     .menu__scroll .menu .underlines {
-        right: 1.825em;
+        right: 0;
     }
 
     .menu__scroll #line__bottom {
