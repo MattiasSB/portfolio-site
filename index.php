@@ -16,11 +16,33 @@
                 <img class="position__absolute rounded intro__image filter__shadow" src="/img/forrest__photo.jpg" alt="" height="375" width="625">
             </div >
         </section>
-        <section class="h__screen">
+        <section class="h__screen carousel__container">
+        <div class="carousel"
+  data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+</div>
 
         </section>
     </main>
     <script src="/scripts/menuMobile.js">
+    </script>
+    <script src="/scripts/flickity.pkgd.min.js">
+    var elem = document.querySelector('.main-carousel');
+    var flkty = new Flickity( elem, {
+    // options
+    cellAlign: 'left',
+    contain: true
+    });
+
+    // element argument can be a selector string
+    //   for an individual element
+    var flkty = new Flickity( '.main-carousel', {
+    // options
+    });
     </script>
 </body>
 </html>

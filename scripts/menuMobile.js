@@ -11,17 +11,20 @@ const xLineBottom = document.getElementById("line__bottom");
 
 let screenWidth = window.innerWidth;
 let menuIsOpen = false;
+let changeOnce = 0;
         
 
 window.addEventListener("scroll", () =>{
-    if(window.scrollY > 48 && screenWidth > 940){
+    if(window.scrollY > 48 && screenWidth > 940 && changeOnce == 0){
+        changeOnce = 1;
         xLineBottom.style.visibility = "visible";
         menuUnderscore.style.right = "1.875em";
         allMenuItems.forEach(item =>{
             item.style.visibility = "hidden"
         })
     }
-    else if(window.scrollY < 48 && screenWidth > 940){
+    else if(window.scrollY < 48 && screenWidth > 940 && changeOnce == 1){
+        changeOnce = 0;
         xLineBottom.style.visibility = "hidden";
         menuUnderscore.style.right = "14.1em";
         allMenuItems.forEach(item =>{
@@ -35,7 +38,7 @@ window.addEventListener("scroll", () =>{
 window.addEventListener("resize", () => {
     screenWidth = window.innerWidth;
     if(screenWidth > 940){
-        closeMenuMobile();
+        closeMenu();
         xLineBottom.style.visibility = "hidden";
         menuUnderscore.style.right = "14.1em";
         allMenuItems.forEach(item =>{
@@ -51,7 +54,7 @@ window.addEventListener("resize", () => {
     }
 });
 /*--------------------------- Mobile Menu  ----------------------------- */
-function closeMenuMobile() {
+function closeMenu() {
     if (menuIsOpen === true){
         menuIsOpen = false;
         allMenuItems.forEach(item =>{
@@ -77,7 +80,7 @@ function closeMenuMobile() {
     }
 }
 
-function openMenuMobile() {
+function openMenu() {
     if (menuIsOpen == false){
         allMenuItems.forEach(item =>{
             item.classList.remove("inline__block");
@@ -106,9 +109,9 @@ function openMenuMobile() {
 
 menuUnderscore.addEventListener("click", () => {
     if (menuIsOpen == false) {
-        openMenuMobile();
+        openMenu();
     }
     else if (menuIsOpen == true){
-        closeMenuMobile();
+        closeMenu();
     }
 });

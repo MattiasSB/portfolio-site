@@ -3,6 +3,7 @@
 @use "reset";
 @use "variables";
 @use "menu";
+@use "flickity.min";
 
 /*--------------------------------------------------
 Fonts
@@ -184,6 +185,15 @@ Intro
     align-items: center;
 }
 
+.carousel-cell {
+width: 66%;
+height: 200px;
+margin-right: 10px;
+background: #8C8;
+border-radius: 5px;
+counter-increment: carousel-cell;
+}
+
 @media (max-width: 940px) {
     /*-- menu media query --*/
     .menu__items {
@@ -277,3 +287,5 @@ Intro
         left: -1.2em;
     }
 }
+
+
