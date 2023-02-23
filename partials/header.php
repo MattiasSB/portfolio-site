@@ -2,7 +2,7 @@
 <header>
     <div class="mx__auto menu__active--target">
         <nav class="menu w__screen mx__auto max__width--container blend__difference">
-            <a href="index.html">
+            <a href="#">
                 <svg width="41" height="39" viewBox="0 0 41 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_29_72)">
                     <path d="M27.4272 39L30.1459 34.914V0L27.4272 2.33812V39Z" fill="#FF825E"/>

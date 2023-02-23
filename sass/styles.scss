@@ -47,6 +47,10 @@ Fonts
     }
 }
 
+.line__height--120 {
+    line-height: initial;
+}
+
 
 /*--------------------------------------------------
 Global
@@ -171,5 +175,8 @@ Spacing
     }
     .text__black {
         color: $black;
+    }
+    .line__height--120 {
+        line-height: 120px;
     }
 }
