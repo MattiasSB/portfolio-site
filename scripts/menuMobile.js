@@ -11,10 +11,17 @@ let menuIsOpen = false;
 
 window.addEventListener("scroll", () =>{
     if(window.scrollY > 48 && screenWidth > 940){
-
+        menu.classList.add("menu__scroll");
+        xLineBottom.style.visibility = "visible";
+        menuUnderscore.classList.remove("underlines");
+        menuUnderscore.classList.add("right");
     }
     else if(window.scrollY < 48 && screenWidth > 940){
-
+        xLineBottom.style.visibility = "hidden";
+        menu.classList.remove("menu__scroll");
+        closeMenuMobile();
+        menuUnderscore.classList.remove("right");
+        menuUnderscore.classList.add("underlines");
     }
 })
 
@@ -22,9 +29,15 @@ window.addEventListener("scroll", () =>{
 
 window.addEventListener("resize", () => {
     screenWidth = window.innerWidth;
-    if(screenWidth > 940){
+    if(screenWidth > 940 && window.scrollY < 48){
         closeMenuMobile();
+        xLineBottom.style.visibility = "visible";
     }
+    else if(screenWidth > 940 && window.scrollY > 48){
+        closeMenuMobile();
+        xLineBottom.style.visibility = "hidden";
+    }
+    
 });
 /*--------------------------- Mobile Menu  ----------------------------- */
 function closeMenuMobile() {
@@ -47,6 +60,7 @@ function openMenuMobile() {
         menuIsOpen = true;
         menu.classList.add("menu__active");
         body.style.overflow = "hidden";
+        xLineBottom.style.visibility = "visible";
         //removes hamburger styling animation
         xLineTop.classList.remove("reverse__menu__underscore--animation--x");
         xLineBottom.classList.remove("reverse__menu__underscore--animation--rx");

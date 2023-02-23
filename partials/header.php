@@ -33,7 +33,7 @@
             </ul>
             <svg class="underlines" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path id="line__top" d="M1.61804 16.35L45.2038 16.35" stroke="#FF825E" stroke-width="3" stroke-linecap="round"/>
-                <path id="line__bottom" d="M9.61798 2.34998L45.618 2.34998" stroke="#FF825E" stroke-width="3" stroke-linecap="round"/>
+                <path class="bottom__line--vis" id="line__bottom" d="M9.61798 2.34998L45.618 2.34998" stroke="#FF825E" stroke-width="3" stroke-linecap="round"/>
             </svg>
         </nav>
     </div>

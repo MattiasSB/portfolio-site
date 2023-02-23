@@ -80,10 +80,6 @@ table {
 }
 
 .menu .underlines {
-  position: absolute;
-  right: 0em;
-  margin: 1.825em;
-  top: 0.4em;
   cursor: pointer;
 }
 
@@ -97,7 +93,6 @@ table {
 
 .menu__active ul {
   position: absolute;
-  z-index: 3;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -173,6 +168,10 @@ table {
   }
 }
 @media (min-width: 940px) {
+  .menu__scroll ul li {
+    visibility: hidden;
+    right: 1.825em;
+  }
   .menu {
     position: fixed;
     width: screen;
@@ -188,11 +187,18 @@ table {
     color: #FF825E;
     text-decoration: none;
   }
-  #line__bottom {
+  .menu .underlines {
+    position: absolute;
+    top: 1.825em;
+    right: 11.6em;
+  }
+  .menu .underlines .bottom__line--vis {
     visibility: hidden;
   }
-  .menu .underlines {
-    right: 11.6em;
+  .right {
+    position: absolute;
+    right: 0;
+    top: 1.825em;
   }
 }
 /*--------------------------------------------------
