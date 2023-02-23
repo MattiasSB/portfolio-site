@@ -1,0 +1,17 @@
+.intro__container {
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.intro__container h1 {
+    max-width: 350px;
+    min-width: 300px;
+    text-align: center;
+}
+
+.intro__container img {
+    width: 350px;
+    height: 250px;
+    z-index: -1;
+}

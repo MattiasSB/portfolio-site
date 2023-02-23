@@ -60,7 +60,7 @@ table {
   display: flex;
   justify-content: space-between;
   position: fixed;
-  z-index: 2;
+  z-index: 4;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -89,6 +89,8 @@ table {
 
 .menu__active {
   opacity: 90%;
+  position: fixed;
+  z-index: 4;
   background: #231F20;
   height: 100vh;
   width: 100vw;
@@ -212,6 +214,24 @@ table {
     visibility: visible;
   }
 }
+.intro__container {
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 50vh;
+}
+
+.intro__container h1 {
+  max-width: 350px;
+  min-width: 300px;
+  text-align: center;
+}
+
+.intro__container img {
+  width: 350px;
+  height: 250px;
+  z-index: -1;
+}
+
 /*--------------------------------------------------
 Fonts
 --------------------------------------------------*/

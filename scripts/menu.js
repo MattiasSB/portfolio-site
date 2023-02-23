@@ -70,7 +70,7 @@ menuUnderscore.addEventListener("click", () => {
     else if (menuIsOpen == false && screenWidth > 940 && scrollPosition > 48) {
         openMenu();
     }
-    else if (menuIsOpen == true && screenWidth > 940){
+    else if (menuIsOpen == true && screenWidth > 940 && scrollPosition > 48){
         closeMenu();
     }
 });
