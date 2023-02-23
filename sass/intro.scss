@@ -6,7 +6,6 @@
 
 .intro__container h1 {
     max-width: 350px;
-    min-width: 300px;
     text-align: center;
 }
 
@@ -14,4 +13,45 @@
     width: 350px;
     height: 250px;
     z-index: -1;
+    bottom: -1em;
+}
+
+
+@media (min-width: $breakpoint__mobile) {
+
+    .intro__container img {
+        width: 437.5px;
+        height: 312.5px;
+        z-index: -1;
+        bottom: -1em;
+    }
+    .intro__container {
+        justify-content: flex-end;
+        flex-direction: column;
+        height: 60vh;
+    }
+}
+
+@media (min-width: $breakpoint__tablet) {
+
+    .intro__container {
+        justify-content: center;
+        flex-direction: column;
+        height:80vh;
+    }
+    
+    .intro__container h1 {
+        max-width: $breakpoint__tablet;
+        text-align: left;
+    }
+    
+    .intro__container img {
+        width: 625px;
+        height: 375px;
+        z-index: -1;
+        bottom: -1em;
+        top: 40vh;
+        justify-self: center;
+        transform: translateX(6em);
+    }
 }

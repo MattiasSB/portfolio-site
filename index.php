@@ -11,8 +11,8 @@
     ?>
     <main>
         <section class="intro font__staatliches">
-            <div class="intro__container position__relative flex items__center">
-                <h1 class="text__xl position__relative text__black">Developing design into digital solutions</h1>
+            <div class="intro__container position__relative flex items__center filter__shadow">
+                <h1 class="text__xl text__black position__relative"><span class="text__orange">Developing</span > design into digital <span class="text__white">solutions</span></h1>
                 <img class="position__absolute rounded" src="/img/forrest__photo.jpg" alt="">
             </div >
         </section>

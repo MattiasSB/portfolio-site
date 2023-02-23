@@ -37,10 +37,10 @@ Fonts
         color: $orange;
     }
     &__black {
-        color: $black;
+        color: $white;
     }
     &__white {
-        color: $white;
+        color: $orange;
     }
     &__center {
         text-align: center;
@@ -53,7 +53,7 @@ Global
 --------------------------------------------------*/
 
 body {
-    background: #F1F0F0;
+    background: $white;
 }
 
 
@@ -156,8 +156,20 @@ Spacing
 // Intro
 // --------------------------------------------------*/
 
+@media (min-width: $breakpoint__mobile) {
+    .text__xl {
+        font-size: 3em;
+    }
+}
+
 @media (min-width: $breakpoint__tablet) {
     .text__xl {
         font-size: 6em;
+    }
+    .text__white {
+        color: $white;
+    }
+    .text__black {
+        color: $black;
     }
 }
