@@ -10,12 +10,12 @@
     @require("partials/header.php")
     ?>
     <main>
-        <div class="h__screen w__screen">
-
-        </div>
-        <div class="h__screen w__screen">
-
-        </div>
+        <section class="text__center h__screen">
+            <h1>Developing design into digital solution</h1>
+            <img src="" alt="">
+        </section>
+        <div class="h__screen"></div>
+        
     </main>
     <script src="/scripts/menuMobile.js">
     </script>

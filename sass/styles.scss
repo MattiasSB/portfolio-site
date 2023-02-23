@@ -34,13 +34,13 @@ Fonts
         font-size: 6em;
     }
     &__orange {
-        color: var(--orange);
+        color: $orange;
     }
     &__black {
-        color: var(--black);
+        color: $black;
     }
     &__white {
-        color: var(--white);
+        color: $white;
     }
 }
 
@@ -112,6 +112,11 @@ Helper
     .visibility__hidden {
         visibility: hidden;
     }
+
+/*--------------------------------------------------
+Grid
+--------------------------------------------------*/
+
 
 
 /*--------------------------------------------------

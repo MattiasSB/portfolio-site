@@ -1,6 +1,6 @@
 
 <header>
-    <div class="mx__auto">
+    <div class="mx__auto menu__active--target">
         <nav class="menu w__screen mx__auto max__width--container">
             <a href="index.html">
                 <svg width="41" height="39" viewBox="0 0 41 39" fill="none" xmlns="http://www.w3.org/2000/svg">
