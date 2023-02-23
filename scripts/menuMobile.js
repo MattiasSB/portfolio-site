@@ -87,6 +87,7 @@ function openMenuMobile() {
         menuIsOpen = true;
         menuItems.classList.remove("menu__items");
         menuColor.style.background = "var(--black)";
+        menuColor.style.opacity = "90%";
         menuColor.classList.remove("blend__difference");
         menuHeight.style.height = "100vh";
         menuLogo.classList.add("menu__open--logo");
@@ -104,10 +105,10 @@ function openMenuMobile() {
 };
 
 menuUnderscore.addEventListener("click", () => {
-    if (menuIsOpen == false && screenWidth < 940) {
+    if (menuIsOpen == false) {
         openMenuMobile();
     }
-    else if (menuIsOpen == true && screenWidth < 940){
+    else if (menuIsOpen == true){
         closeMenuMobile();
     }
 });
