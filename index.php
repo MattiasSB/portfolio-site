@@ -26,7 +26,7 @@
                 <?php endforeach; ?>
             </div>
         </section>
-        <section class="max">
+        <section class="max__w--container mx__auto">
             <div class="intro__about"> 
                 <img class="filter__shadow rounded" src="/img/self__photo.jpg" alt="Photo of me with my brother" width="400" height="375">
                 <div class="flex flex__cols items__center justify__center intro__about--text">
