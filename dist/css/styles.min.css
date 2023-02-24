@@ -265,7 +265,6 @@ table {
     justify-self: center;
     transform: translateX(4em);
     scale: 1.75;
-    margin-left: 0.5em;
   }
 }
 /*! Flickity v2.3.0
@@ -412,6 +411,63 @@ https://flickity.metafizzy.co
   opacity: 1;
 }
 
+.carousel {
+  height: 100%;
+  margin: 10% 0%;
+}
+
+.carousel-cell {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 1em;
+  counter-increment: carousel-cell;
+  margin: 25% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-cell p {
+  margin-top: -3em;
+  color: #231F20;
+}
+
+.carousel a {
+  text-decoration: none;
+}
+
+.carousel-cell img {
+  scale: 0.7;
+  margin: 0em -2.5em;
+}
+
+@media (min-width: 540px) {
+  .carousel-cell img {
+    scale: 0.8;
+    margin: 0;
+  }
+  .carousel-cell {
+    margin: 5% 0;
+  }
+  .carousel-cell p {
+    margin-top: -1em;
+    color: #231F20;
+  }
+}
+@media (min-width: 940px) {
+  .carousel-cell img {
+    scale: 1;
+    margin: 0;
+  }
+  .carousel-cell {
+    margin: 8% 5%;
+  }
+  .carousel-cell p {
+    margin-top: 1em;
+    color: #231F20;
+  }
+}
 /*--------------------------------------------------
 Fonts
 --------------------------------------------------*/
@@ -551,27 +607,6 @@ Spacing
   max-width: 1046px;
 }
 
-.carousel {
-  height: 100%;
-  margin: 10% 0%;
-}
-
-.carousel-cell {
-  width: fit-content;
-  height: fit-content;
-  border-radius: 1em;
-  counter-increment: carousel-cell;
-  margin: 25% 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel-cell img {
-  scale: 0.7;
-  margin: 0em -2.5em;
-}
-
 @media (min-width: 540px) {
   .text__xl {
     font-size: 3em;
@@ -589,13 +624,6 @@ Spacing
   }
   .line__height--120 {
     line-height: 120px;
-  }
-  .carousel-cell img {
-    scale: 1;
-    margin: 0 2em;
-  }
-  .carousel-cell {
-    margin: 15% 5%;
   }
 }
 

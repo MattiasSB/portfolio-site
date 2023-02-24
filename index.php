@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <!--Flickity for side scrolls-->
+    <?php 
+    @require_once("init.php");
+    ?>
 
 <?php 
 @require("partials/head.php");
@@ -16,18 +19,12 @@
                 <img class="position__absolute rounded" src="/img/forrest__photo.jpg" alt="">
             </div>
         </section>
-        <section class="projects__scroll items__center">
-            <div class="carousel" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
-                <div class="carousel-cell">
-                    <img class="rounded" src="/img/project-dash.jpg" alt="">
-                </div>
-                <div class="carousel-cell">
-                    <img class="rounded" src="/img/project-botanical.jpg" alt="">
-                </div>
-                <div class="carousel-cell">
-                    <img class="rounded" src="/img/project-bottleshooter.jpg" alt="">
-                </div>
-            </div>
+        <section>
+        <div class="carousel" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
+        <?php foreach($homeScroll as $cardInfo): ?>
+            <?php require(__DIR__ . "/partials/carousel__card.php");?>
+        <?php endforeach; ?>
+        </div>
         </section>
     </main>
     <script src="/scripts/flickity.pkgd.min.js"></script>
