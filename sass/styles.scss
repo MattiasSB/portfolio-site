@@ -10,7 +10,6 @@
 /*--------------------------------------------------
 Fonts
 --------------------------------------------------*/
-* { box-sizing: border-box; }
 
 .font {
 
@@ -123,6 +122,18 @@ Helper
     visibility: hidden;
 }
 
+.button__black {
+    background: $black;
+    width: 134px;
+    height: 42px;
+    border-radius: 16px;
+}
+
+.button__black a {
+    color: $white;
+    text-decoration: none;
+}
+
 /*--------------------------------------------------
 Spacing
 --------------------------------------------------*/
@@ -159,9 +170,6 @@ Spacing
     width: 100%;
 }
 
-.max__width--container {
-    max-width: 1046px;
-}
 
 // /*--------------------------------------------------
 // Intro
@@ -171,6 +179,14 @@ Spacing
 @media (min-width: $breakpoint__mobile) {
     .text__xl {
         font-size: 3em;
+    }
+    .button__black {
+        width: 160px;
+        height: 54px;
+        border-radius: 16px;
+    }
+    .button__black a {
+        font-size: 1.2em;
     }
 }
 
@@ -187,7 +203,12 @@ Spacing
     .line__height--120 {
         line-height: 120px;
     }
+    .button__black {
+        width: 190px;
+        height: 60px;
+        border-radius: 16px;
+    }
+    .button__black a {
+        font-size: 2em;
+    }
 }
-
-
-

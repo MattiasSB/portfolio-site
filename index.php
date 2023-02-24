@@ -20,11 +20,20 @@
             </div>
         </section>
         <section>
-        <div class="carousel" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
-        <?php foreach($homeScroll as $cardInfo): ?>
-            <?php require(__DIR__ . "/partials/carousel__card.php");?>
-        <?php endforeach; ?>
-        </div>
+            <div class="carousel" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
+                <?php foreach($homeScroll as $cardInfo): ?>
+                    <?php require(__DIR__ . "/partials/carousel__card.php");?>
+                <?php endforeach; ?>
+            </div>
+        </section>
+        <section class="max">
+            <div class="intro__about"> 
+                <img class="filter__shadow rounded" src="/img/self__photo.jpg" alt="Photo of me with my brother" width="400" height="375">
+                <div class="flex flex__cols items__center justify__center intro__about--text">
+                    <p class="font__spacegrotesk--700">My name is <span class="text__orange">Mattias Bellan</span >. Im a life long learner, striving to <span class="text__orange">innovate</span> and <span class="text__orange">empower</span> through digital design and development.</p>
+                    <div class="button__black flex justify__center items__center filter__shadow"><a class="font__staatliches" href="#">About me</a></div>
+                </div>
+            </div> 
         </section>
     </main>
     <script src="/scripts/flickity.pkgd.min.js"></script>
