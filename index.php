@@ -10,7 +10,7 @@
 ?>
 <body>
     <?php 
-    @require("partials/header.php")
+    @require("partials/header.php");
     ?>
     <main>
         <section class="intro font__staatliches">
