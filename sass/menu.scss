@@ -28,9 +28,8 @@
 
 .menu .underlines {
     position: absolute;
-    right: 0em;
-    margin: 1.825em;
-    top: 0.4em;
+    right: 1.825em;
+    top: 2.225em;
     cursor: pointer;
 }
 
@@ -152,15 +151,19 @@
     }
     .menu ul li {
         display: inline-block;
-        margin: 1.825em;
+        padding: 1.825em;
     }
     .menu ul li a { 
         color: $orange;
         text-decoration: none;
     }
 
+    .menu ul li a:hover {
+        color: #0e6e92;
+    }
+
     .menu .underlines {
-        right: 11.6em;
+        right: 13.425em;
     }
 
     .menu__scroll .menu ul {
@@ -168,11 +171,22 @@
     }
 
     .menu__scroll .menu .underlines {
-        right: 0;
+        animation: menuScrollHome 300ms forwards;
+    }
+    @keyframes menuScrollHome {
+        0% {
+            right: 13.425em;
+            opacity: 30%;
+        }
+        100% {
+            right: 1.825em;
+            opacity: 100%;
+        }
     }
 
     .menu__scroll #line__bottom {
         visibility: visible;
     }
     
+
 }

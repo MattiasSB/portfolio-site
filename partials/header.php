@@ -22,13 +22,13 @@
             </a>
             <ul class="font__staatliches">
                 <li class="">
-                    <a href="#">Home</a>
+                    <a href="/index.php">Home</a>
                 </li>
                 <li class="">
                     <a href="#">Work</a>
                 </li>
                 <li class="">
-                    <a href="#">About</a>
+                    <a href="/about.php">About</a>
                 </li>
             </ul>
             <svg class="underlines" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
