@@ -78,20 +78,33 @@
 
 @keyframes rotateX {
     0% {
-        d: path("M9.61798 2.34998L45.618 2.34998");
+        -ms-transform: rotate(0); /* IE 9 */
+        -ms-transform-origin: 0%; /* IE 9 */
+        transform: rotate(0);
+        transform-origin: 0;
+        border-radius: 3px;
     }
     100%{
-        d: path("M2 33.8442L39.4192 2.15615");
-        scale: 0.75;
+        -ms-transform: rotate(-45deg); /* IE 9 */
+        -ms-transform-origin: 20% 40%; /* IE 9 */
+        transform: rotate(-45deg);
+        transform-origin: 20% 40%;
     }
 }
 
 @keyframes rotateX__reverse {
-    0% {d: path('M1.61804 16.35L45.2038 16.35');
+    0% {
+        -ms-transform: rotate(0); /* IE 9 */
+        -ms-transform-origin: 0%; /* IE 9 */
+        transform: rotate(0);
+        transform-origin: 0;
+        border-radius: 3px;
     }
     100%{
-        d: path("M2.19238 2L38.8302 33.6378");
-        scale: 0.75;
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -ms-transform-origin: -20% -40%; /* IE 9 */
+        transform: rotate(45deg);
+        transform-origin: 30% -40%;
     }
 }
 
