@@ -306,10 +306,10 @@ https://flickity.metafizzy.co
   }
   .menu__scroll .menu ul {
     transform: translateX(100vw);
-    top: 2.225em;
   }
   .menu__scroll .menu .underlines {
     animation: menuScrollHome 300ms forwards;
+    top: 2.225em;
   }
   @keyframes menuScrollHome {
     0% {
