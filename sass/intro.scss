@@ -27,7 +27,6 @@
     }
 
     height: 60vh;
-    margin-bottom: 30%;
 }
 
 .intro__about img {
@@ -50,6 +49,10 @@
     margin: 2em;
 }
 
+.intro__about .button__black {
+    margin: 0 2em 4em 2em;
+}
+
 
 @media (min-width: $breakpoint__mobile) {
 
@@ -64,12 +67,10 @@
     .intro__container {
         justify-content: flex-end;
         flex-direction: column;
-        height: 50vh;
     }
 
     .intro__about {
         font-size: 1.2em;
-        margin-bottom: 10%;
     }
 
     .intro__about--text {
@@ -113,6 +114,10 @@
         max-width: none;
     }
     
+    .intro__about {
+        height: 68vh;
+    }
+
     .intro__about img {
         grid-column: 1/span 6;
         max-width: to_rem(400);

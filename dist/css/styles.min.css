@@ -349,7 +349,6 @@ https://flickity.metafizzy.co
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   height: 60vh;
-  margin-bottom: 30%;
 }
 @media (min-width: 540px) {
   .intro__about {
@@ -377,6 +376,10 @@ https://flickity.metafizzy.co
   margin: 2em;
 }
 
+.intro__about .button__black {
+  margin: 0 2em 4em 2em;
+}
+
 @media (min-width: 540px) {
   .intro__container img {
     z-index: -1;
@@ -389,11 +392,9 @@ https://flickity.metafizzy.co
   .intro__container {
     justify-content: flex-end;
     flex-direction: column;
-    height: 50vh;
   }
   .intro__about {
     font-size: 1.2em;
-    margin-bottom: 10%;
   }
   .intro__about--text {
     max-width: 27.34375rem;
@@ -428,6 +429,9 @@ https://flickity.metafizzy.co
     justify-content: center;
     max-height: 25rem;
     max-width: none;
+  }
+  .intro__about {
+    height: 68vh;
   }
   .intro__about img {
     grid-column: 1/span 6;
@@ -549,8 +553,7 @@ Helper
 
 .button__black {
   background: #231F20;
-  width: 134px;
-  height: 42px;
+  padding: 15px 25px;
   border-radius: 1rem;
 }
 
@@ -579,14 +582,6 @@ Spacing
   width: 100vw;
 }
 
-.h__50--screen {
-  height: 50vh;
-}
-
-.h__screen {
-  height: 100vh;
-}
-
 .w__100 {
   width: 100%;
 }
@@ -600,8 +595,7 @@ Spacing
     font-size: 3em;
   }
   .button__black {
-    width: 160px;
-    height: 54px;
+    scale: 1.2;
     border-radius: 16px;
   }
   .button__black a {
@@ -620,11 +614,6 @@ Spacing
   }
   .line__height--120 {
     line-height: 120px;
-  }
-  .button__black {
-    width: 190px;
-    height: 60px;
-    border-radius: 16px;
   }
   .button__black a {
     font-size: 2em;

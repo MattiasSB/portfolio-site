@@ -127,8 +127,7 @@ Helper
 
 .button__black {
     background: $black;
-    width: 134px;
-    height: 42px;
+    padding: 15px 25px;
     border-radius: 1rem;
 }
 
@@ -161,14 +160,6 @@ Spacing
     width: 100vw;
 }
 
-.h__50--screen {
-    height: 50vh;
-}
-
-.h__screen {
-    height: 100vh;
-}
-
 .w__100 {
     width: 100%;
 }
@@ -188,8 +179,7 @@ Spacing
         font-size: 3em;
     }
     .button__black {
-        width: 160px;
-        height: 54px;
+        scale: 1.2;
         border-radius: 16px;
     }
     .button__black a {
@@ -209,11 +199,6 @@ Spacing
     }
     .line__height--120 {
         line-height: 120px;
-    }
-    .button__black {
-        width: 190px;
-        height: 60px;
-        border-radius: 16px;
     }
     .button__black a {
         font-size: 2em;
