@@ -1,10 +1,13 @@
+@use "functions" as *;
 @import "fonts";
 @import "reset";
 @import "variables";
-@import "menu";
-@import "intro";
 @import "flickity";
 @import "carousel";
+@import "menu";
+@import "intro";
+@import "about";
+
 
 
 /*--------------------------------------------------
@@ -25,7 +28,7 @@ Fonts
     &__spacegrotesk--700 {
         font-family: 'Space Grotesk', sans-serif;
         font-weight: 700;
-        letter-spacing: 0.06em;
+        line-height: 1.3em;
     }
 
 
@@ -126,7 +129,7 @@ Helper
     background: $black;
     width: 134px;
     height: 42px;
-    border-radius: 16px;
+    border-radius: 1rem;
 }
 
 .button__black a {
