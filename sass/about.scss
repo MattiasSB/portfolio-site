@@ -1,6 +1,99 @@
+.banner__container {
+    width: fit-content; 
+    height: fit-content;
+    margin: 0 auto;
+}
+
 .banner__image {
-    height: 50vh;
-    width: 100vw;
-    background: url("/img/about-banner.jpg");
-    background-repeat: no-repeat;
+    object-fit: cover;
+    aspect-ratio: 1000/400;
+    border-radius: 1em;
+    width: 85vw;
+    height: 100vh;
+    margin-top: 20vh;
+    max-height: to_rem(400);
+    max-width: to_rem(1000);
+}
+
+.about .carousel {
+    margin: 2em 0;
+}
+.about .carousel-cell {
+    padding: 1em;
+}
+.about__card h4, p {
+    padding: 1em;
+}
+
+.about__card h2, h3 {
+    padding: 0.5em;
+}
+
+.about__card {
+    height: 80vh;
+    width: 30vw;
+    border-radius: 1em;
+    background: $black;
+    min-width: to_rem(350);
+    max-width: to_rem(350);
+    max-height: to_rem(550);
+    min-height: to_rem(550);
+}
+
+.about__card--content p {
+    font-size: 1em;
+    color: $white;
+    margin: 1em;
+    line-height: to_rem(20);
+}
+
+.social__links {
+    color: $white;
+    text-decoration: underline;
+    font-size: 1em;
+    padding: 1em;
+}
+
+.schooling {
+    margin-top: 2em;
+}
+
+.schooling svg {
+    margin: 0 45%;
+    rotate: 90deg;
+}
+
+.card__arrow--right {
+    bottom: 1em;
+    right: 1em;
+}
+
+.card__arrow--right svg{
+    padding-left: 0.5em;
+}
+
+.card__arrow--left {
+    bottom: 1em;
+    left: 1em;
+}
+
+.card__arrow--left svg{
+    transform: scaleX(-1);
+    padding-left: 0.5em;
+}
+
+@media (max-width: $breakpoint__tablet) {
+    .banner__image {
+        max-height: to_rem(350);
+        max-width: to_rem(350);
+    }
+    
+}
+
+@media (max-width: $breakpoint__mobile) {
+    .banner__image {
+        max-height: to_rem(250);
+        max-width: to_rem(350);
+
+    }
 }

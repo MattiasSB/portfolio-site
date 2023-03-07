@@ -35,6 +35,12 @@ Fonts
 }
 
 .text {
+    &__md {
+        font-size: 2em;
+    }
+    &__lg {
+        font-size: 3em;
+    }
     &__xl {
         font-size: 2em;
     }
@@ -45,11 +51,21 @@ Fonts
         color: $white;
     }
     &__white {
-        color: $orange;
+        color: $white;
     }
     &__center {
         text-align: center;
     }
+}
+
+.intro .text__orange {
+    color: $orange;
+}
+.intro .text__orange {
+    color: $white;
+}
+.intro .text__orange {
+    color: $orange;
 }
 
 .line__height--120 {

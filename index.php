@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--Flickity for side scrolls-->
     <?php 
     @require_once("init.php");
     ?>
@@ -19,7 +18,7 @@
                 <img class="position__absolute rounded" src="/img/forrest__photo.jpg" alt="">
             </div>
         </section>
-        <section>
+        <section class="projects">
             <div class="carousel" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
                 <?php foreach($homeScroll as $cardInfo): ?>
                     <?php require(__DIR__ . "/partials/carousel__card.php");?>
