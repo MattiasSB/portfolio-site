@@ -1,6 +1,6 @@
 
 <header>
-    <div class="mx__auto menu__active--target">
+    <div class="mx__auto menu__active--target blend__difference">
         <nav class="menu w__screen mx__auto max__width--container blend__difference">
             <a href="/index.php">
                 <svg width="41" height="39" viewBox="0 0 41 39" fill="none" xmlns="http://www.w3.org/2000/svg">
