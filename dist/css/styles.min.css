@@ -215,7 +215,7 @@ https://flickity.metafizzy.co
 }
 
 .menu__active a svg {
-  z-index: 3;
+  z-index: 4;
 }
 
 .menu__underscore--animation--x {
