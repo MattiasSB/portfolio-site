@@ -6,5 +6,4 @@
     require(__DIR__ . "/classes/cards__class.php");
     require(__DIR__ . '/data/data.php');
 
-    opcache_reset();
 ?>
