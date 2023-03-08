@@ -1,7 +1,14 @@
 .banner__container {
     width: fit-content; 
     height: fit-content;
-    margin: 0 auto;
+}
+
+.banner__container h1 {
+    font-size: 6.5vw;
+    bottom: 0;
+    transform: translateY(-1em);
+    width: 85vw;
+    max-width: to_rem(1000);
 }
 
 .banner__image {
@@ -15,6 +22,7 @@
     max-width: to_rem(1000);
 }
 
+
 .about .carousel {
     margin: 2em 0;
 }
@@ -26,7 +34,7 @@
 }
 
 .about__card h2, h3 {
-    padding: 0.5em;
+    padding: 1em 0.5em 0.5em 0.5em;
 }
 
 .about h2, h3, p, h4, h1 {
@@ -38,10 +46,8 @@
     width: 30vw;
     border-radius: 1em;
     background: $black;
-    min-width: to_rem(350);
-    max-width: to_rem(350);
-    max-height: to_rem(550);
-    min-height: to_rem(550);
+    width: to_rem(350);;
+    height: to_rem(550);
 }
 
 .about__card--content p {
@@ -89,5 +95,11 @@
         max-height: to_rem(250);
         max-width: to_rem(350);
 
+    }
+    .banner__container h1 {
+        font-size: 6.5vw;
+        bottom: 0;
+        transform: translateY(-1em);
+        max-width: to_rem(350);
     }
 }

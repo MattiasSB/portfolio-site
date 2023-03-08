@@ -27,9 +27,9 @@
         </section>
         <section class="max__w--container mx__auto">
             <div class="intro__about"> 
-                <img class="filter__shadow rounded" src="/img/self__photo.jpg" alt="Photo of me with my brother" width="400" height="375">
-                <div class="flex flex__cols items__center intro__about--text">
-                    <p class="font__spacegrotesk--700">My name is <span class="text__orange">Mattias Bellan</span >. Im a life long learner, striving to <span class="text__orange">innovate</span> and <span class="text__orange">empower</span> through digital design and development.</p>
+                <img class="filter__shadow rounded mx__auto" src="/img/self__photo.jpg" alt="Photo of me with my brother" width="400" height="375">
+                <div class="flex flex__cols items__center intro__about--text mx__auto">
+                    <h2 class="font__spacegrotesk--700">My name is <span class="text__orange">Mattias Bellan</span >. Im a life long learner, striving to <span class="text__orange">innovate</span> and <span class="text__orange">empower</span> through digital design and development.</h2>
                     <div class="button__black flex justify__center items__center filter__shadow"><a class="font__staatliches" href="#">About me</a></div>
                 </div>
             </div> 
