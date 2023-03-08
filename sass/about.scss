@@ -29,6 +29,10 @@
     padding: 0.5em;
 }
 
+.about h2, h3, p, h4, h1 {
+    line-height: to_rem(20);
+}
+
 .about__card {
     height: 80vh;
     width: 30vw;
@@ -44,7 +48,6 @@
     font-size: 1em;
     color: $white;
     margin: 1em;
-    line-height: to_rem(20);
 }
 
 .social__links {
@@ -72,20 +75,11 @@
     padding-left: 0.5em;
 }
 
-.card__arrow--left {
-    bottom: 1em;
-    left: 1em;
-}
-
-.card__arrow--left svg{
-    transform: scaleX(-1);
-    padding-left: 0.5em;
-}
 
 @media (max-width: $breakpoint__tablet) {
     .banner__image {
         max-height: to_rem(350);
-        max-width: to_rem(350);
+        max-width: to_rem(1000);
     }
     
 }
