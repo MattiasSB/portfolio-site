@@ -91,6 +91,12 @@
                     <p class="text__white font__spacegrotesk--400">Proficient in Adobe PhotoShop, Adobe After Effects, Adobe Illustrator, Adobe Premier, and Procreate</p>
                     <h4 class="text__orange font__staatliches">Prototyping/ 3D Modelling</h4>
                     <p class="text__white font__spacegrotesk--400">Proficient in Figma, and Adobe XD, as well as experience with Adobe Dimensions, and Fantastic Fold</p>
+                    <div class="card__arrow--right text__white flex position__absolute items__center">
+                        <p class="font__spacegrotesk--400">Dev Tools</p>
+                        <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.003 13.0607C15.5888 12.4749 15.5888 11.5251 15.003 10.9393L5.45703 1.3934C4.87124 0.807611 3.92149 0.807611 3.33571 1.3934C2.74992 1.97919 2.74992 2.92893 3.33571 3.51472L11.821 12L3.33571 20.4853C2.74992 21.0711 2.74992 22.0208 3.33571 22.6066C3.92149 23.1924 4.87124 23.1924 5.45703 22.6066L15.003 13.0607ZM0 13.5H13.9423V10.5H0V13.5Z" fill="#FF825E"/>
+                        </svg>
+                    </div>
                 </div>
             </div>
             <div class="carousel-cell">
