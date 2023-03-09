@@ -452,10 +452,6 @@ https://flickity.metafizzy.co
     margin: 0;
   }
 }
-.work__heading {
-  height: 25vh;
-}
-
 .work__design {
   height: 100vh;
 }
@@ -496,6 +492,7 @@ https://flickity.metafizzy.co
 @media (max-width: 540px) {
   .work__design {
     height: 70vh;
+    padding-top: 15%;
   }
   .work__development {
     height: 70vh;

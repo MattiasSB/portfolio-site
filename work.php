@@ -10,9 +10,6 @@ $titleTag = "Work";
         @require("partials/header.php");
     ?>
     <main class="work">
-        <div class="work__heading flex flex__cols justify__ends">
-            <h1 class="text__center font__staatliches text__xl">Work</h1>
-        </div>
         <section class="work__design flex flex__cols justify__center">
             <h2 class="font__staatliches text__md">Design</h2>
             <div class="projects">
