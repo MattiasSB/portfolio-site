@@ -2,8 +2,10 @@
 <html lang="en">
 <?php 
 $titleTag = "Work";
+$metaDescription = "Here's a list of my design and development work.";
 @require_once("init.php");
 @require("partials/head.php");
+
 ?>
 <body>
     <?php 

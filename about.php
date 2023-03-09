@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php 
+    $metaDescription = "Here's a little more about me, my work as a designer/developer as well as my personal life.";
     $titleTag = "About";
     @require_once("init.php");
     @require("partials/head.php");
+    
 ?>
 <body>
     <?php 
@@ -39,9 +41,9 @@
                 <h2 class="font__staatliches text__lg text__white">About Me</h2>
                 <h3 class="font__spacegrotesk--700 text__md text__white">I do <span class="text__orange">Design</span>, and <span class="text__orange">Development</span></h3>
                 <div class="flex flex__cols">
-                    <a class="social__links font__spacegrotesk--400" href="#">Linkedin</a>
-                    <a class="social__links font__spacegrotesk--400" href="mailto:m.bellan500@gmail.com">m.bellan500@gmail.com</a>
-                    <a class="social__links font__spacegrotesk--400" href="tel:+16045002732">604-500-2732</a>
+                    <a class="social__links font__spacegrotesk--400" href="#" title="Linkedin profile link">Linkedin</a>
+                    <a class="social__links font__spacegrotesk--400" href="mailto:m.bellan500@gmail.com" title="Personal email contact info">m.bellan500@gmail.com</a>
+                    <a class="social__links font__spacegrotesk--400" href="tel:+16045002732" title="Personal phone number contact info">604-500-2732</a>
                 </div>
                 <div class="card__arrow--right text__white flex position__absolute items__center">
                     <p class="font__spacegrotesk--400">Education</p>
