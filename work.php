@@ -32,7 +32,7 @@ $titleTag = "Work";
         </section>
     </main>
     <script src="/scripts/flickity.pkgd.min.js"></script>
-    <script src="/scripts/menu.js"></script>
-    <script src="/scripts/pagedetect.js"></script>
+    <script src="/scripts/menu.js?v=1"></script>
+    <script src="/scripts/pagedetect.js?v=1"></script>
 </body>
 </html>
