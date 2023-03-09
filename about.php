@@ -116,8 +116,8 @@
             </div>
         </div>
     </section>
-    <script src="/scripts/flickity.pkgd.min.js"></script>
-    <script src="/scripts/menu.js"></script>
-    <script src="/scripts/pagedetect.js"></script>
+    <script src="/scripts/flickity.pkgd.min.js" defer></script>
+    <script src="/scripts/menu.js" defer></script>
+    <script src="/scripts/pagedetect.js" defer></script>
 </body>
 </html>

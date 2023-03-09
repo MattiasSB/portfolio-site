@@ -33,8 +33,8 @@ $metaDescription = "Here's a list of my design and development work.";
             </div>
         </section>
     </main>
-    <script src="/scripts/flickity.pkgd.min.js"></script>
-    <script src="/scripts/menu.js?v=1"></script>
-    <script src="/scripts/pagedetect.js?v=1"></script>
+    <script src="/scripts/flickity.pkgd.min.js" defer></script>
+    <script src="/scripts/menu.js" defer></script>
+    <script src="/scripts/pagedetect.js" defer></script>
 </body>
 </html>
