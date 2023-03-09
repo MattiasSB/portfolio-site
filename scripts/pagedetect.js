@@ -4,6 +4,12 @@ let url = window.location.href;
 //returns the full path
 let lastLoadedPage = document.referrer;
 
+window.onload = function () { 
+    if(screenWidth < 940){
+        menuUnderscore.style.right = "1.825em";
+    }
+}
+
 function moveUnderscore(){
 
     if(loadedPage == "/work.php" && screenWidth > 940){
