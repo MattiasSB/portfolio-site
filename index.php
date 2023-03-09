@@ -38,5 +38,6 @@
     </main>
     <script src="/scripts/flickity.pkgd.min.js"></script>
     <script src="/scripts/menu.js"></script>
+    <script src="/scripts/pagedetect.js"></script>
 </body>
 </html>

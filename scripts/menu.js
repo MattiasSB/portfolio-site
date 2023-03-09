@@ -61,16 +61,13 @@ function openMenu() {
 };
 
 menuUnderscore.addEventListener("click", () => {
-    if (menuIsOpen == false && screenWidth < 940) {
+    if (menuIsOpen == false && screenWidth < 940 || menuIsOpen == false && screenWidth > 940 && scrollPosition > 48) {
         openMenu();
     }
-    else if (menuIsOpen == true && screenWidth < 940){
-        closeMenu();
-    }
-    else if (menuIsOpen == false && screenWidth > 940 && scrollPosition > 48) {
-        openMenu();
-    }
-    else if (menuIsOpen == true && screenWidth > 940 && scrollPosition > 48){
+    else if (menuIsOpen == true && screenWidth < 940 || menuIsOpen == true && screenWidth > 940 && scrollPosition > 48){
         closeMenu();
     }
 });
+
+
+
