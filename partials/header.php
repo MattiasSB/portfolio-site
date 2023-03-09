@@ -24,7 +24,7 @@
                     <a href="/index.php">Home</a>
                 </li>
                 <li class="">
-                    <a href="#">Work</a>
+                    <a href="/work.php">Work</a>
                 </li>
                 <li class="">
                     <a href="/about.php">About</a>

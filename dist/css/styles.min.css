@@ -379,8 +379,8 @@ https://flickity.metafizzy.co
   max-width: 25rem;
 }
 
-.intro__about p {
-  margin: 2em;
+.intro__about h2 {
+  margin: 1em;
 }
 
 .intro__about .button__black {
@@ -452,9 +452,65 @@ https://flickity.metafizzy.co
     margin: 0;
   }
 }
+.work__heading {
+  height: 25vh;
+}
+
+.work__design {
+  height: 100vh;
+}
+
+.work__design h2 {
+  margin: 20% 0 0 15%;
+  color: #231F20;
+}
+
+.work .text__md {
+  font-size: 3em;
+}
+
+.work .projects .carousel {
+  margin: 0;
+}
+
+.work .work__development .projects .carousel p, .carousel {
+  color: #F1F0F0;
+}
+
+.work__development .projects .carousel-cell {
+  margin: 0;
+}
+
+.work__development {
+  height: fit-content;
+  background: #231F20;
+  margin-top: 5%;
+  padding-bottom: 5%;
+}
+
+.work__development h2 {
+  margin: 0 0 10% 15%;
+  padding-top: 5%;
+}
+
+@media (max-width: 540px) {
+  .work__design {
+    height: 70vh;
+  }
+  .work__development {
+    height: 70vh;
+  }
+  .work .text__md {
+    font-size: 1em;
+  }
+}
 /*--------------------------------------------------
 Fonts
 --------------------------------------------------*/
+body {
+  color: #231F20;
+}
+
 .font__staatliches {
   font-family: "Staatliches", cursive;
   letter-spacing: 0.06em;

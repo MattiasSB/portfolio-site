@@ -6,6 +6,7 @@
 @import "carousel";
 @import "menu";
 @import "intro";
+@import "works";
 
 
 
@@ -13,6 +14,9 @@
 /*--------------------------------------------------
 Fonts
 --------------------------------------------------*/
+body {
+    color: $black;
+}
 
 .font {
 

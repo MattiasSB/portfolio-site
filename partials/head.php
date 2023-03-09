@@ -1,8 +1,11 @@
 <head>
+    <?php 
+        $titleTag = $titleTag;
+    ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg" href="/img/Logo.svg">
-    <title>Portfolio Home - Mattias Bellan</title>
+    <title>Portfolio <?php echo $titleTag?> - Mattias Bellan</title>
     <link rel="stylesheet" href="/dist/css/styles.min.css?v=1">
 </head>

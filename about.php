@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php 
-@require_once("init.php");
-@require("partials/head.php");
+    $titleTag = "About";
+    @require_once("init.php");
+    @require("partials/head.php");
 ?>
 <body>
     <?php 
