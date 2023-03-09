@@ -3,7 +3,7 @@
 @require_once(__DIR__ . "/../init.php");
 
 $bottleShooter = new cardInfo([
-    'source' => '',
+    'source' => '#',
     'title' => 'bottle shotting web based game project project information',
     'alt' => 'Monitor displaying Bottle Shooter web game',
     'projectName' => 'BottleShooter',
@@ -14,7 +14,7 @@ $bottleShooter = new cardInfo([
 ]);
 
 $dash = new cardInfo([
-    'source' => '',
+    'source' => '#',
     'title' => 'responsive website project information',
     'alt' => 'Monitor displaying DASH website',
     'projectName' => 'DASH',
@@ -25,7 +25,7 @@ $dash = new cardInfo([
 ]);
 
 $botanical = new cardInfo([
-    'source' => '',
+    'source' => '#',
     'title' => 'mobile app prototype project information',
     'alt' => 'Phone displaying Botanical prototype',
     'projectName' => 'Botanical',
@@ -36,7 +36,7 @@ $botanical = new cardInfo([
 ]);
 
 $guitar = new cardInfo([
-    'source' => '',
+    'source' => '#',
     'title' => 'guitar magazine project information',
     'alt' => 'Magazine displaying Guitar Monthly Magazine',
     'projectName' => 'Guitar Monthly',
@@ -47,7 +47,7 @@ $guitar = new cardInfo([
 ]);
 
 $marketshare = new cardInfo([
-    'source' => '',
+    'source' => '#',
     'title' => 'mobile app prototype project information',
     'alt' => 'Phone displaying MarketShare prototype',
     'projectName' => 'MarketShare',
