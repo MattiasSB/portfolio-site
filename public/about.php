@@ -3,7 +3,7 @@
 <?php 
     $metaDescription = "Here's a little more about me, my work as a designer/developer as well as my personal life.";
     $titleTag = "About";
-    @require_once("init.php");
+    @require_once("../app/init.php");
     @require("partials/head.php");
     
 ?>
@@ -12,7 +12,7 @@
     @require("partials/header.php");
     ?>
     <div class="banner__container mx__auto position__relative">
-            <img class="banner__image filter__shadow" src="/img/about-banner.jpg" alt="Picture of me on  a hike." height="400" width="1000">
+            <img class="banner__image filter__shadow" src="img/about-banner.jpg" alt="Picture of me on  a hike." height="400" width="1000">
             <h1 class="text__center font__staatliches position__absolute text__white">Mattias <span class="text__orange">Bellan</span></h1>
     </div>
     <section class="about">
@@ -116,8 +116,8 @@
             </div>
         </div>
     </section>
-    <script src="/scripts/flickity.pkgd.min.js" defer></script>
-    <script src="/scripts/menu.js" defer></script>
-    <script src="/scripts/pagedetect.js" defer></script>
+    <script src="scripts/flickity.pkgd.min.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/pagedetect.js" defer></script>
 </body>
 </html>

@@ -11,15 +11,16 @@ window.onload = function () {
 }
 
 function moveUnderscore(){
+    console.log(loadedPage)
 
-    if(loadedPage == "/work.php" && screenWidth > 940){
+    if(loadedPage == "//public/work.php" && screenWidth > 940){
         //switch classname to variable stored in string
         menuUnderscore.style.right = "7.5em";
     }
-    else if (loadedPage == "/about.php" && screenWidth > 940) {
+    else if (loadedPage == "//public/about.php" && screenWidth > 940) {
         menuUnderscore.style.right = "1.5em";
     }
-    else if (loadedPage == "/" && screenWidth > 940 || loadedPage == "/index.php" && screenWidth > 940) {
+    else if (loadedPage == "//public/" && screenWidth > 940 || loadedPage == "/index.php" && screenWidth > 940) {
         menuUnderscore.style.right = "13.425em";
     }
 }

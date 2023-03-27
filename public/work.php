@@ -3,7 +3,7 @@
 <?php 
 $titleTag = "Work";
 $metaDescription = "Here's a list of my design and development work.";
-@require_once("init.php");
+@require_once("../app/init.php");
 @require("partials/head.php");
 
 ?>
@@ -33,8 +33,8 @@ $metaDescription = "Here's a list of my design and development work.";
             </div>
         </section>
     </main>
-    <script src="/scripts/flickity.pkgd.min.js" defer></script>
-    <script src="/scripts/menu.js" defer></script>
-    <script src="/scripts/pagedetect.js" defer></script>
+    <script src="scripts/flickity.pkgd.min.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/pagedetect.js" defer></script>
 </body>
 </html>
