@@ -564,6 +564,9 @@ https://flickity.metafizzy.co
   margin-top: 1em;
   padding: 0.3em;
 }
+.story__explanation h3, .story__explanation h2, .work__stages h3, .work__stages h2 {
+  line-height: 1.2em;
+}
 
 .work__stages h3 {
   padding: 0.3em;
