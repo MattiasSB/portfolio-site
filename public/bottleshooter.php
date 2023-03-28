@@ -99,6 +99,22 @@ $projectOne = $ProjectsArray[1];
             </div>
         </div>
     </section>
+    <section class="work__stages description__p mx__auto text__black">
+        <div class="mx__auto max__w--container">
+            <div class="description__p mx__auto">
+                <h2 class="text__center font__staatliches text__lg"><?php echo ($projectFour->projectSectionHeading1)?></h2>
+                <p class="text__md font__spacegrotesk--400"><?php echo ($projectFour->projectParagraph1)?></p>
+            </div>
+        </div>
+    </section>
+    <div class="flex justify__center">
+        <div class="button__black flex justify__center items__center filter__shadow">
+            <a class="font__staatliches" href="<?php echo ($Projects->buttonOneLink)?>" title="<?php echo ($Projects->buttonOneTitle)?>"><?php echo ($Projects->buttonOneContent)?></a>
+        </div>
+        <div class="button__black flex justify__center items__center filter__shadow button__orange">
+        <a class="font__staatliches" href="<?php echo ($Projects->buttonTwoLink)?>" title="<?php echo ($Projects->buttonTwoTitle)?>"><?php echo ($Projects->buttonTwoContent)?></a>
+        </div>
+    </div>
     <script src="scripts/flickity.pkgd.min.js" defer></script>
     <script src="scripts/menu.js" defer></script>
     <script src="scripts/pagedetect.js" defer></script>

@@ -108,6 +108,12 @@ $projectThree = new Projects([
     'projectParagraph1' => 'Now it was time to put on my designer hat and hop in Adobe Illustrator to design some new assets.'
 ]);
 
+$projectFour = new Projects([
+    'projectSectionHeading1' => 'Third - Sixth Version',
+    'projectParagraph1' => 'This consisted of creating a menu, and adding keyboard commands to navigate the menu (the not very fun stuffs). Ultimately upon completing the menu, and bug fixes, I had reached version 6, and it was time to release my project.'
+]);
+
+
 $marketshareHeaderImg = new Projects([
     'source' => '#',
     'title' => 'mobile app prototype project information',
