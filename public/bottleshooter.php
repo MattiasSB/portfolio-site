@@ -115,8 +115,9 @@ $projectOne = $ProjectsArray[1];
         <a class="font__staatliches" href="<?php echo ($Projects->buttonTwoLink)?>" title="<?php echo ($Projects->buttonTwoTitle)?>"><?php echo ($Projects->buttonTwoContent)?></a>
         </div>
     </div>
+    <?php @require('partials/social__modal.php'); ?>
     <script src="scripts/flickity.pkgd.min.js" defer></script>
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/pagedetect.js" defer></script>
+    <script src="scripts/pagedetect.js" defer></script> 
 </body>
 </html>

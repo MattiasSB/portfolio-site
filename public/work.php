@@ -32,6 +32,7 @@ $metaDescription = "Here's a list of my design and development work.";
                 </div>
             </div>
         </section>
+        <?php @require('partials/social__modal.php'); ?>
     </main>
     <script src="scripts/flickity.pkgd.min.js" defer></script>
     <script src="scripts/menu.js" defer></script>

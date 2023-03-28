@@ -14,13 +14,13 @@
     @require("partials/header.php");
     ?>
     <main>
-        <section class="intro font__staatliches">
+        <section class="intro font__staatliches slide__in">
             <div class="intro__container position__relative flex items__center filter__shadow">
                 <h1 class="text__xl text__black position__relative line__height--120"><span class="text__orange">Developing</span > design into digital <span class="text__white">solutions</span></h1>
                 <img class="position__absolute rounded" src="img/forrest__photo.jpg" alt="">
             </div>
         </section>
-        <section class="projects">
+        <section class="projects slide__in">
             <div class="carousel" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
                 <?php foreach($homeScroll as $cardInfo): ?>
                     <?php include(get_path('public/partials/carousel__card.php'));?>
@@ -36,6 +36,7 @@
                 </div>
             </div> 
         </section>
+        <?php @require('partials/social__modal.php'); ?>
     </main>
     <script src="scripts/flickity.pkgd.min.js" defer></script>
     <script src="scripts/menu.js" defer></script>

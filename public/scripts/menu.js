@@ -70,4 +70,20 @@ menuUnderscore.addEventListener("click", () => {
 });
 
 
+//modal
+
+const activeTarget = document.querySelector('.active__target')
+
+let chevronTicker = 0;
+
+activeTarget.addEventListener('click', () => {
+    if(chevronTicker == 0){
+        activeTarget.classList.add('active')
+        chevronTicker = 1;
+    }
+    else if(chevronTicker == 1){
+        activeTarget.classList.remove('active');
+        chevronTicker = 0;
+    }
+})
 

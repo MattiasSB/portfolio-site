@@ -1,0 +1,90 @@
+
+.chevron {
+    margin: 0.5em;
+    height: fit-content;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    scale: 0.5;
+    z-index: 9999999999;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    mix-blend-mode: difference;
+
+    @media (max-width: $breakpoint__tablet) {
+        margin: 0;
+        right: -1em;
+        bottom: -1em;
+    }
+}
+
+.active .chevron {
+    scale: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+
+.active #Mail {
+    scale: 0.6;
+    transform: translateY(-200px);
+    transition: all 0.3s ease-in-out;
+}
+
+.active #Phone {
+    scale: 0.6;
+    transform: translateY(-350px);
+    transition: all 0.3s ease-in-out;
+}
+
+.active #linkedin {
+    scale: 0.6;
+    transform: translateY(-500px);
+    transition: all 0.3s ease-in-out;
+}
+
+.chevron:hover {
+    scale: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+
+.active #linkedin:hover {
+    scale: 0.8;
+    transform: translateY(-395px);
+
+}
+
+.active #Mail:hover {
+    scale: 0.8;
+    transform: translateY(-160px);
+
+}
+
+.active #Phone:hover {
+    scale: 0.8;
+    transform: translateY(-270px);
+}
+
+.chevron svg {
+    padding: 2em;
+    border-radius: 50%;
+    background: $orange;
+    scale: 1;
+    margin: 1.2em;
+    transition: all 0.3s ease-in-out;
+}
+
+.popup svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+
+#contact {
+    z-index: 99999999999;
+    position: absolute;
+}

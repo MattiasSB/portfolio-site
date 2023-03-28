@@ -115,6 +115,7 @@
                 </div>
             </div>
         </div>
+        <?php @require('partials/social__modal.php'); ?>
     </section>
     <script src="scripts/flickity.pkgd.min.js" defer></script>
     <script src="scripts/menu.js" defer></script>
