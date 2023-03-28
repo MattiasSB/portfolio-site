@@ -99,7 +99,7 @@ $projectOne = $ProjectsArray[1];
             </div>
         </div>
     </section>
-    <section class="work__stages description__p mx__auto text__black">
+    <section class="work__stages description__p mx__auto">
         <div class="mx__auto max__w--container">
             <div class="description__p mx__auto">
                 <h2 class="text__center font__staatliches text__lg"><?php echo ($projectFour->projectSectionHeading1)?></h2>
