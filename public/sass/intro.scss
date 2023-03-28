@@ -18,15 +18,22 @@
     bottom: -1em;
 }
 
-.intro__about {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+.project {
+    padding-top: 8em;
+    height: fit-content;
+}
 
+
+.intro__about {    
     @media (min-width: $breakpoint__mobile) { 
         font-size: to_rem(32);
     }
 
     height: 60vh;
+}
+
+.project .intro__about {
+    height: fit-content;
 }
 
 .intro__about img {
@@ -37,6 +44,12 @@
     grid-column: auto/span 12;
 }
 
+.project .intro__about img {
+    max-width: to_rem(325);
+    max-height: to_rem(325);
+    aspect-ratio: 1/1;
+}
+
 .intro__about--text {
     grid-column: auto/span 12;
     max-width: to_rem(400);
@@ -45,13 +58,16 @@
 .intro__about h2 {
     margin: 1em;
 }
-
-.intro__about .button__black {
+.button__black {
     margin: 0 2em 4em 2em;
 }
 
 
 @media (min-width: $breakpoint__mobile) {
+
+    .project {
+        padding-top: 8em;
+    }
 
     .intro__container img {
         z-index: -1;
@@ -68,6 +84,7 @@
 
     .intro__about {
         font-size: 1.2em;
+        height: fit-content;
     }
 
     .intro__about--text {
@@ -77,9 +94,17 @@
     .intro__about img {
         max-width: to_rem(437.5);
     }
+    .projects .intro__about img {
+        max-width: to_rem(375);
+        max-height: to_rem(375);
+    }
 }
 
 @media (min-width: $breakpoint__tablet) {
+
+    .project {
+        padding-top: 12em;
+    }
 
     .intro__container {
         justify-content: center;
@@ -112,14 +137,19 @@
     }
     
     .intro__about {
-        height: 68vh;
+        height: fit-content;
+        margin-bottom: 20vh;
+    }
+
+    .project .intro__about {
+        height: fit-content;
+        margin-bottom: 0;
     }
 
     .intro__about img {
-        grid-column: 1/span 6;
+        grid-column: auto/span 6;
         max-width: to_rem(400);
     }
-
     .intro__about .button__black {
         font-size: 0.3em;
         margin: 2em;
@@ -127,4 +157,8 @@
     .intro__about p {
         margin: 0;
     }
+}
+
+.ratio__square { 
+    aspect-ratio: 1/1;
 }

@@ -7,6 +7,7 @@
 @import "menu";
 @import "intro";
 @import "works";
+@import "projects";
 
 
 
@@ -17,6 +18,21 @@ Fonts
 body {
     color: $black;
 }
+
+.grid {
+    display: grid;
+
+    &__template--cols-12 {
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1em;
+    }
+    &__span--6 {
+        grid-column: auto/span 6;
+    }
+}
+
+
+
 
 .font {
 
@@ -156,6 +172,10 @@ Helper
     text-decoration: none;
 }
 
+.button__orange {
+    background: $orange;
+}
+
 /*--------------------------------------------------
 Spacing
 --------------------------------------------------*/
@@ -173,6 +193,10 @@ Spacing
     &b__10 {
         margin-bottom: 10em;
     }
+
+    &h__auto {
+        margin: auto 0;
+    }
 }
 
 
@@ -186,6 +210,10 @@ Spacing
 
 .max__w--container {
     max-width: 1046px;
+}
+
+.h__100 {
+    height: 100%;
 }
 
 

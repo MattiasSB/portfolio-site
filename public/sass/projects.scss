@@ -1,0 +1,68 @@
+.story__explanation, .work__stages {
+    padding: 10vh 0;
+    @media (max-width: $breakpoint__tablet) {
+        .text__xl {
+            padding: 0.6em;
+        }
+    }
+
+    @media (max-width: $breakpoint__mobile) {
+        .text__md {
+            font-size: 1em;
+        }
+        h3 {
+            margin-left: 0.3em;
+        }
+    }
+
+    line-height: 1.2em;
+    .description__p {
+        max-width: 95vw;
+    }
+    .text__md {
+        line-height: 1.2em;
+    }
+    h2 {
+        padding: 0.6em;
+    }
+    h3 {
+        margin-top: 1em;
+        padding: 0.3em;
+    }
+    
+}
+
+.work__stages {
+    h3 {
+        padding: 0.3em;
+        margin-left: 0.6em;
+    }
+    ul li {
+        list-style: circle;
+        margin-left: 2.4em;
+    }
+}
+
+.background__black {
+    background: $black;
+}
+
+pre {
+    background-color: black;
+    font-size: 14px;
+    line-height: 1.4;
+    overflow-x: auto;
+    margin-top: 2em;
+    padding: 1em 0;
+}
+
+code.language-javascript {
+    color: $white;
+    font-family: "Courier New", Courier, monospace;
+}
+
+iframe {
+    width: 100%;
+    margin: 1em 0;
+}
+

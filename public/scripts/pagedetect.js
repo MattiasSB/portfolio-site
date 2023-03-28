@@ -13,7 +13,7 @@ window.onload = function () {
 function moveUnderscore(){
     console.log(loadedPage)
 
-    if(loadedPage == "//public/work.php" && screenWidth > 940){
+    if(loadedPage == "//public/work.php" && screenWidth > 940 || loadedPage == "//public/bottleshooter.php" && screenWidth > 940){
         //switch classname to variable stored in string
         menuUnderscore.style.right = "7.5em";
     }

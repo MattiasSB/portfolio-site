@@ -355,9 +355,12 @@ https://flickity.metafizzy.co
   bottom: -1em;
 }
 
+.project {
+  padding-top: 8em;
+  height: fit-content;
+}
+
 .intro__about {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
   height: 60vh;
 }
 @media (min-width: 540px) {
@@ -366,12 +369,22 @@ https://flickity.metafizzy.co
   }
 }
 
+.project .intro__about {
+  height: fit-content;
+}
+
 .intro__about img {
   max-width: 21.875rem;
   aspect-ratio: 400/375;
   width: 100%;
   object-fit: cover;
   grid-column: auto/span 12;
+}
+
+.project .intro__about img {
+  max-width: 20.3125rem;
+  max-height: 20.3125rem;
+  aspect-ratio: 1/1;
 }
 
 .intro__about--text {
@@ -383,11 +396,14 @@ https://flickity.metafizzy.co
   margin: 1em;
 }
 
-.intro__about .button__black {
+.button__black {
   margin: 0 2em 4em 2em;
 }
 
 @media (min-width: 540px) {
+  .project {
+    padding-top: 8em;
+  }
   .intro__container img {
     z-index: -1;
     bottom: -1em;
@@ -402,6 +418,7 @@ https://flickity.metafizzy.co
   }
   .intro__about {
     font-size: 1.2em;
+    height: fit-content;
   }
   .intro__about--text {
     max-width: 27.34375rem;
@@ -409,8 +426,15 @@ https://flickity.metafizzy.co
   .intro__about img {
     max-width: 27.34375rem;
   }
+  .projects .intro__about img {
+    max-width: 23.4375rem;
+    max-height: 23.4375rem;
+  }
 }
 @media (min-width: 940px) {
+  .project {
+    padding-top: 12em;
+  }
   .intro__container {
     justify-content: center;
     flex-direction: column;
@@ -438,10 +462,15 @@ https://flickity.metafizzy.co
     max-width: none;
   }
   .intro__about {
-    height: 68vh;
+    height: fit-content;
+    margin-bottom: 20vh;
+  }
+  .project .intro__about {
+    height: fit-content;
+    margin-bottom: 0;
   }
   .intro__about img {
-    grid-column: 1/span 6;
+    grid-column: auto/span 6;
     max-width: 25rem;
   }
   .intro__about .button__black {
@@ -452,6 +481,10 @@ https://flickity.metafizzy.co
     margin: 0;
   }
 }
+.ratio__square {
+  aspect-ratio: 1/1;
+}
+
 .work__design {
   height: 100vh;
 }
@@ -498,14 +531,88 @@ https://flickity.metafizzy.co
     height: 70vh;
   }
   .work .text__md {
-    font-size: 1em;
+    font-size: 1.8em;
   }
 }
+.story__explanation, .work__stages {
+  padding: 10vh 0;
+  line-height: 1.2em;
+}
+@media (max-width: 940px) {
+  .story__explanation .text__xl, .work__stages .text__xl {
+    padding: 0.6em;
+  }
+}
+@media (max-width: 540px) {
+  .story__explanation .text__md, .work__stages .text__md {
+    font-size: 1em;
+  }
+  .story__explanation h3, .work__stages h3 {
+    margin-left: 0.3em;
+  }
+}
+.story__explanation .description__p, .work__stages .description__p {
+  max-width: 95vw;
+}
+.story__explanation .text__md, .work__stages .text__md {
+  line-height: 1.2em;
+}
+.story__explanation h2, .work__stages h2 {
+  padding: 0.6em;
+}
+.story__explanation h3, .work__stages h3 {
+  margin-top: 1em;
+  padding: 0.3em;
+}
+
+.work__stages h3 {
+  padding: 0.3em;
+  margin-left: 0.6em;
+}
+.work__stages ul li {
+  list-style: circle;
+  margin-left: 2.4em;
+}
+
+.background__black {
+  background: #231F20;
+}
+
+pre {
+  background-color: black;
+  font-size: 14px;
+  line-height: 1.4;
+  overflow-x: auto;
+  margin-top: 2em;
+  padding: 1em 0;
+}
+
+code.language-javascript {
+  color: #F1F0F0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+iframe {
+  width: 100%;
+  margin: 1em 0;
+}
+
 /*--------------------------------------------------
 Fonts
 --------------------------------------------------*/
 body {
   color: #231F20;
+}
+
+.grid {
+  display: grid;
+}
+.grid__template--cols-12 {
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1em;
+}
+.grid__span--6 {
+  grid-column: auto/span 6;
 }
 
 .font__staatliches {
@@ -633,6 +740,10 @@ Helper
   text-decoration: none;
 }
 
+.button__orange {
+  background: #FF825E;
+}
+
 /*--------------------------------------------------
 Spacing
 --------------------------------------------------*/
@@ -648,6 +759,9 @@ Spacing
 .mb__10 {
   margin-bottom: 10em;
 }
+.mh__auto {
+  margin: auto 0;
+}
 
 .w__screen {
   width: 100vw;
@@ -659,6 +773,10 @@ Spacing
 
 .max__w--container {
   max-width: 1046px;
+}
+
+.h__100 {
+  height: 100%;
 }
 
 @media (min-width: 540px) {
@@ -726,7 +844,7 @@ Spacing
   padding: 1em;
 }
 
-.about__card h2, h3 {
+.about__card h2, .about__card h3 {
   padding: 1em 0.5em 0.5em 0.5em;
 }
 

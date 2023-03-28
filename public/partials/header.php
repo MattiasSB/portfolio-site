@@ -27,7 +27,7 @@
                     <a href="<?php echo get_public_url('/work.php'); ?>" title="All of my projects">Work</a>
                 </li>
                 <li class="">
-                    <a href="<?php echo get_public_url('about.php'); ?>" title="More about me">About</a>
+                    <a href="<?php echo get_public_url('/about.php'); ?>" title="More about me">About</a>
                 </li>
             </ul>
             <svg class="underlines" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">

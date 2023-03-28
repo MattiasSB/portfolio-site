@@ -28,11 +28,11 @@
             </div>
         </section>
         <section class="max__w--container mx__auto">
-            <div class="intro__about"> 
+            <div class="intro__about grid grid__template--cols-12"> 
                 <img class="filter__shadow rounded mx__auto" src="img/self__photo.jpg" alt="Photo of me with my brother" width="400" height="375">
                 <div class="flex flex__cols items__center intro__about--text mx__auto">
                     <h2 class="font__spacegrotesk--700">My name is <span class="text__orange">Mattias Bellan</span >. Im a life long learner, striving to <span class="text__orange">innovate</span> and <span class="text__orange">empower</span> through digital design and development.</h2>
-                    <div class="button__black flex justify__center items__center filter__shadow"><a class="font__staatliches" href="/about.php" title="More information about me">About me</a></div>
+                    <div class="button__black flex justify__center items__center filter__shadow"><a class="font__staatliches" href="<?php echo get_public_url('/about.php'); ?>" title="More information about me">About me</a></div>
                 </div>
             </div> 
         </section>
