@@ -56,7 +56,7 @@
             <div class="carousel-cell">
                 <div class="about__card flex flex__cols position__relative">
                     <h3 class="font__staatliches text__lg text__white">Schooling</h3>
-                    <p class="font__spacegrotesk--400 text__white">Despite limited education, I am a motivated self learner dedicated to improving!</p>
+                    <p class="font__spacegrotesk--400 text__white">As a young developer, I am a motivated self learner dedicated to improving!</p>
                     <div class="schooling"> 
                         <h4 class="font__staatliches text__white"><span class="text__orange">-High school diploma</span> | <br> EARL MARRIOTT SECONDARY SCHOOL </h4>
                             <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
