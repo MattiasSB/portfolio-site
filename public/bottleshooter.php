@@ -118,6 +118,6 @@ $projectOne = $ProjectsArray[1];
     <?php @require('partials/social__modal.php'); ?>
     <script src="scripts/flickity.pkgd.min.js" defer></script>
     <script src="scripts/menu.js?v=1" defer></script>
-    <script src="scripts/pagedetect.js" defer></script> 
+    <script src="scripts/pagedetect.js?v=1" defer></script> 
 </body>
 </html>
