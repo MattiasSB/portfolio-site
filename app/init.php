@@ -1,6 +1,6 @@
 <?php 
 
-    // define('WWW_ROOT', 'http://localhost:8888/');
+    // define('WWW_ROOT', 'http://localhost:8888');
     define('WWW_ROOT', 'https://mattiasbellan.ca');
     define('PROJECT_ROOT', dirname(__DIR__, 1));
 
