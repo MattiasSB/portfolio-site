@@ -25,7 +25,7 @@ $dash = new cardInfo([
 ]);
 
 $botanical = new cardInfo([
-    'source' => '#',
+    'source' => 'botanical.php',
     'title' => 'mobile app prototype project information',
     'alt' => 'Phone displaying Botanical prototype',
     'projectName' => 'Botanical',
@@ -90,6 +90,26 @@ $bottleShooterProject = new Projects([
     'briefExplanation' => 'The <span class="text__orange">BottleShooter</span> game started as an idea for an animation assignment with mouse tracking. The goal shifted and became to create digital assets and make a fully functioning game using as minimal internet and external help as possible. The specific style of game is aim trainer/shooter. ',
     'longExplanation' => 'This project was meant to advance skills in JavaScript, HTML, and CSS. As well as testing my ability to create a project in an iterative manner. <br><br> The project started with a single bottle animation for an Animation assignment, it featured a mouse tracking scope which would appear when pressing SHIFT, and a bottle that would break upon clicking. I could have left it there but something in me really really wanted it to respawn. <br><br> I suppose this is where you could say, “**** hits the fan” .  Despite my problem solving being relatively quickly, the code was very non-flexible, and needed a complete overhaul (as you will see in the version history). '
 ]);
+$botanicalProject = new Projects([
+    'source' => 'botanical.php',
+    'title' => 'botanical gardens interactive prototype project',
+    'alt' => 'Phone displaying botanical gardens prototype',
+    'projectName' => 'Botanical',
+    'projectType' => ' Interactive Prototype',
+    'imageSource' => '/project-botanical.jpg',
+    'height' => '400',
+    'width' => '500',
+    'introHeadingContent' => 'Botanical',
+    'introParagraphContent' => 'BOTANICAL IS AN <span class="text__orange">INTERACTIVE PROTOTYPE</span> CREATED IN ADOBE XD, FEATURING MULTIPLE <span class="text__orange">FUNCTIONAL PROCESSES</span>.',
+    'buttonOneLink' => 'https://www.bottleshooter.mattiasbellan.ca/',
+    'buttonOneTitle' => 'Link to Adobe Xd prototype',
+    'buttonOneContent' => 'Try Now',
+    'buttonTwoLink' => 'https://github.com/MattiasSB/bottleshooter',
+    'buttonTwoTitle' => 'Link to Adobe XD prototype',
+    'buttonTwoContent' => 'Figma',
+    'briefExplanation' => 'The <span class="text__orange">Botanical</span> prototype is a e-commerce application for a plant store. It featured an initial planning phase consisting of user flows, personas, and mind mapping which contributed to a successful user testing phase.',
+    'longExplanation' => 'This project was meant to demonstrate a functional prototype with feasibility in mind. This involved rigorous planning stages as well as creating the fictional botanical identity. <br><br> The first part of planning consisted of a mind map, of potential brand identities to create an application around. The next steps involved mapping the user flows, and developing user personas to better understand the end user.  From there my focus was on creating an intuitive app interface in accordance with my planning document(s) specifications. '
+]);
 
 $projectOne = new Projects([
     'projectSectionHeading1' => 'First Version',
@@ -113,6 +133,11 @@ $projectFour = new Projects([
     'projectParagraph1' => 'This consisted of creating a menu, and adding keyboard commands to navigate the menu (the not very fun stuffs). Ultimately upon completing the menu, and bug fixes, I had reached version 6, and it was time to release my project.'
 ]);
 
+$projectFive = new Projects([
+    'projectSectionHeading1' => 'Initial Process',
+    'projectParagraph1' => 'This consisted of creating a menu, and adding keyboard commands to navigate the menu (the not very fun stuffs). Ultimately upon completing the menu, and bug fixes, I had reached version 6, and it was time to release my project.'
+]);
+
 
 $marketshareHeaderImg = new Projects([
     'source' => '#',
@@ -128,7 +153,7 @@ $marketshareHeaderImg = new Projects([
 
 
 $ProjectsArray = [
-    $bottleShooterProject, $projectOne, $projectTwo,  $marketshareHeaderImg
+    $bottleShooterProject, $projectOne, $projectTwo,  $marketshareHeaderImg, $botanicalProject, $projectFive
 ]
 
 ?>

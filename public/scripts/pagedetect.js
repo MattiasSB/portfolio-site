@@ -43,22 +43,19 @@ if(loadedPage == "/public/" || loadedPage == "/index.php/"){
 GsapMM.add("(min-width: 940px)", () =>{
     gsap.to(
         ".home .carousel", {
-        scrollTrigger: {trigger: '.scroll__marker',scrub: 1, start:"20%", end: "80%"}, 
-        y:"2vw", 
+        scrollTrigger: {trigger: '.scroll__marker',scrub: 1, start:"20%", end: "80%"},  
         opacity: "1", 
         ease: "ease-in-ease-out"
     }) 
     gsap.to(
         ".home .intro__container",{
-        scrollTrigger: {trigger: '.scroll__marker', scrub: 1, start:"20%", end: "80%"}, 
-        y:"4vw", 
+        scrollTrigger: {trigger: '.scroll__marker', scrub: 1, start:"20%", end: "80%"},  
         opacity: "0", 
         ease: "ease-in-ease-out"
     }) 
     gsap.to(
         ".intro__about", {
-            scrollTrigger: {trigger: '.scroll__marker', scrub: 1, start:"100%", end: "120%"},
-        y:"0vw", 
+            scrollTrigger: {trigger: '.scroll__marker', scrub: 1, start:"80%", end: "120%"},
         opacity: "1", 
         ease: "ease-in-ease-out"
     }) 
@@ -69,7 +66,6 @@ GsapMM.add("(min-width: 940px)", () =>{
 GsapMM.add("(max-width: 940px)", () => {
     gsap.to(
         ".home .intro__container, .home .carousel", {
-        y:"0vw", 
         duration: "0.5",
         opacity: "1", 
         ease: "ease-in-ease-out"
@@ -77,7 +73,6 @@ GsapMM.add("(max-width: 940px)", () => {
     gsap.to(
         ".intro__about", {
         scrollTrigger: {trigger: ".carousel", scrub: 1, start:"-80%", end: "20%"}, 
-        y:"0vw", 
         opacity: "1", 
         ease: "ease-in-ease-out"
     }) 
@@ -91,13 +86,11 @@ else if (loadedPage == "/public/work.php") {
         gsap.to(
             ".work__development .carousel", {
             scrollTrigger: {trigger: ".work__design", scrub: 1, start:"20%", end: "0%"}, 
-            y:"0vw", 
             opacity: "1", 
             ease: "ease-in-ease-out"
         })
         gsap.to(
             ".work__design .carousel", {
-            y:"0vw", 
             duration: "0.5",
             opacity: "1", 
             ease: "ease-in-ease-out"
@@ -106,15 +99,13 @@ else if (loadedPage == "/public/work.php") {
     GsapMM.add("(min-width: 940px)", () => {
         gsap.to(
             ".work__development .carousel", {
-            scrollTrigger: {scrub: 1, start:"20%", end: "30%"}, 
-            y:"0vw", 
+                scrollTrigger: {trigger: '.scroll__marker', scrub: 1, start:"40%", end: "100%"}, 
             opacity: "1", 
             ease: "ease-in-ease-out"
         })
         gsap.to(
             ".work__design .carousel",{
             scrollTrigger: {trigger: '.scroll__marker', scrub: 1, start:"20%", end: "80%"}, 
-            y:"4vw", 
             opacity: "0", 
             ease: "ease-in-ease-out"
         })
@@ -124,7 +115,6 @@ else if (loadedPage == "/public/work.php") {
 else if (loadedPage == "/public/about.php") {
     gsap.to(
         ".banner__container, .carousel", {
-        y:"0vw", 
         duration: "0.5",
         opacity: "1", 
         ease: "ease-in-ease-out"

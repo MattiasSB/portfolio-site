@@ -102,7 +102,6 @@ https://flickity.metafizzy.co
 
 .home .carousel, .work__development .carousel {
   opacity: 0;
-  transform: translateY(-4vw);
 }
 
 .projects .carousel-cell {
@@ -975,7 +974,6 @@ Spacing
 
 .about .carousel, .banner__container {
   opacity: 0;
-  transform: translateY(-4vw);
 }
 
 .about__card {
