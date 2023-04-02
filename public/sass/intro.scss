@@ -31,6 +31,11 @@
 
     height: 60vh;
 }
+.home .intro__about {
+    opacity: 0;
+    transform: translateY(-4vw);
+}
+
 
 .project .intro__about {
     height: fit-content;
@@ -60,6 +65,10 @@
 }
 .button__black {
     margin: 0 2em 4em 2em;
+}
+
+.intro__about p {
+    margin: 1em;
 }
 
 
@@ -121,7 +130,7 @@
     .intro__container img {
         z-index: -1;
         bottom: -1em;
-        top: 50vh;
+        top: 12em;
         justify-self: center;
         transform: translateX(4em);
         scale: 1.75;
@@ -155,7 +164,7 @@
         margin: 2em;
     }
     .intro__about p {
-        margin: 0;
+        margin: 1em;
     }
 }
 

@@ -11,12 +11,14 @@ $Projects = $ProjectsArray[0];
 $projectOne = $ProjectsArray[1];
 @require("partials/head.php");
 ?>
-<body>
-    <?php @require('partials/header.php')?>
+<body class="project__item">
+    <?php @require('partials/header.php');
+    ?>
 
 
 
-    <?php @require('partials/project__content.php')?>
+    <?php @require('partials/project__content.php');
+    @require('partials/scroll__marker.php');?>
     <?php $Projects = $ProjectsArray[0];?>
     <section class="work__stages background__black description__p mx__auto text__white">
         <div class="mx__auto max__w--container">
@@ -116,6 +118,8 @@ $projectOne = $ProjectsArray[1];
         </div>
     </div>
     <?php @require('partials/social__modal.php'); ?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="scripts/flickity.pkgd.min.js" defer></script>
     <script src="scripts/menu.js?v=1" defer></script>
     <script src="scripts/pagedetect.js?v=1" defer></script> 

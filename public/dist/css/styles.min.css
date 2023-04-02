@@ -100,6 +100,11 @@ https://flickity.metafizzy.co
   margin: 5% 0%;
 }
 
+.home .carousel, .work__development .carousel {
+  opacity: 0;
+  transform: translateY(-4vw);
+}
+
 .projects .carousel-cell {
   width: fit-content;
   height: fit-content;
@@ -200,10 +205,6 @@ https://flickity.metafizzy.co
   justify-content: center;
   text-align: center;
   visibility: visible;
-  animation: slide__in 0.3s ease-in-out forwards;
-}
-
-.slide__in {
   animation: slide__in 0.3s ease-in-out forwards;
 }
 
@@ -373,6 +374,11 @@ https://flickity.metafizzy.co
   }
 }
 
+.home .intro__about {
+  opacity: 0;
+  transform: translateY(-4vw);
+}
+
 .project .intro__about {
   height: fit-content;
 }
@@ -402,6 +408,10 @@ https://flickity.metafizzy.co
 
 .button__black {
   margin: 0 2em 4em 2em;
+}
+
+.intro__about p {
+  margin: 1em;
 }
 
 @media (min-width: 540px) {
@@ -452,7 +462,7 @@ https://flickity.metafizzy.co
   .intro__container img {
     z-index: -1;
     bottom: -1em;
-    top: 50vh;
+    top: 12em;
     justify-self: center;
     transform: translateX(4em);
     scale: 1.75;
@@ -482,7 +492,7 @@ https://flickity.metafizzy.co
     margin: 2em;
   }
   .intro__about p {
-    margin: 0;
+    margin: 1em;
   }
 }
 .ratio__square {
@@ -528,11 +538,12 @@ https://flickity.metafizzy.co
 
 @media (max-width: 540px) {
   .work__design {
-    height: 70vh;
-    padding-top: 15%;
+    height: fit-content;
+    padding: 15% 0;
   }
   .work__development {
-    height: 70vh;
+    height: fit-content;
+    padding: 15% 0;
   }
   .work .text__md {
     font-size: 1.8em;
@@ -605,7 +616,6 @@ iframe {
 }
 
 .chevron {
-  margin: 0.5em;
   height: fit-content;
   position: fixed;
   bottom: 0;
@@ -859,6 +869,13 @@ Spacing
   margin: auto 0;
 }
 
+.scroll__marker {
+  position: fixed;
+  top: 0;
+  z-index: 10000000000000000;
+  pointer-events: none;
+}
+
 .w__screen {
   width: 100vw;
 }
@@ -873,6 +890,10 @@ Spacing
 
 .h__100 {
   height: 100%;
+}
+
+.h__screen {
+  height: 100vh;
 }
 
 @media (min-width: 540px) {
@@ -936,7 +957,7 @@ Spacing
   padding: 1em;
 }
 
-.about__card h4, p {
+.about__card h4, .about p {
   padding: 1em;
 }
 
@@ -944,8 +965,17 @@ Spacing
   padding: 1em 0.5em 0.5em 0.5em;
 }
 
-.about h2, h3, p, h4, h1 {
-  line-height: 1.25rem;
+.about__card h2, .about__card p, .about__card h4, .about__card h1 {
+  line-height: 1.25em;
+}
+
+.about .carousel-card h3 {
+  font-size: 8em;
+}
+
+.about .carousel, .banner__container {
+  opacity: 0;
+  transform: translateY(-4vw);
 }
 
 .about__card {
@@ -1004,6 +1034,11 @@ Spacing
     bottom: 0;
     transform: translateY(-1em);
     max-width: 21.875rem;
+  }
+}
+@media (min-width: 1500px) {
+  .banner__container h1 {
+    font-size: 8em;
   }
 }
 

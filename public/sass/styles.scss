@@ -200,6 +200,12 @@ Spacing
     }
 }
 
+.scroll__marker {
+    position: fixed;
+    top: 0;
+    z-index: 9999999999999999;
+    pointer-events: none;
+}
 
 .w__screen {
     width: 100vw;
@@ -215,6 +221,10 @@ Spacing
 
 .h__100 {
     height: 100%;
+}
+
+.h__screen {
+    height: 100vh;
 }
 
 

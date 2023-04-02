@@ -8,8 +8,8 @@ $metaDescription = "Here's a list of my design and development work.";
 
 ?>
 <body>
-    <?php 
-        @require("partials/header.php");
+<?php @require('partials/header.php');
+    @require('partials/scroll__marker.php')
     ?>
     <main class="work">
         <section class="work__design flex flex__cols justify__center">
@@ -34,6 +34,8 @@ $metaDescription = "Here's a list of my design and development work.";
         </section>
         <?php @require('partials/social__modal.php'); ?>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="scripts/flickity.pkgd.min.js" defer></script>
     <script src="scripts/menu.js?v=1" defer></script>
     <script src="scripts/pagedetect.js?v=1" defer></script>

@@ -8,8 +8,8 @@
     
 ?>
 <body>
-    <?php 
-    @require("partials/header.php");
+<?php @require('partials/header.php');
+    @require('partials/scroll__marker.php')
     ?>
     <div class="banner__container mx__auto position__relative">
             <img class="banner__image filter__shadow" src="img/about-banner.jpg" alt="Picture of me on  a hike." height="400" width="1000">
@@ -117,6 +117,8 @@
         </div>
         <?php @require('partials/social__modal.php'); ?>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="scripts/flickity.pkgd.min.js" defer></script>
     <script src="scripts/menu.js?v=1" defer></script>
     <script src="scripts/pagedetect.js?v=1" defer></script>

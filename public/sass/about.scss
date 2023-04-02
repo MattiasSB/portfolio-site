@@ -23,13 +23,14 @@
 }
 
 
+
 .about .carousel {
     margin: 2em 0;
 }
 .about .carousel-cell {
     padding: 1em;
 }
-.about__card h4, p {
+.about__card h4, .about p {
     padding: 1em;
 }
 
@@ -37,8 +38,17 @@
     padding: 1em 0.5em 0.5em 0.5em;
 }
 
-.about h2, h3, p, h4, h1 {
-    line-height: to_rem(20);
+.about__card h2, .about__card p, .about__card h4, .about__card h1 {
+    line-height: 1.25em;
+}
+
+.about .carousel-card h3 {
+    font-size: 8em;
+}
+
+.about .carousel, .banner__container {
+    opacity: 0;
+    transform: translateY(-4vw);
 }
 
 .about__card {
@@ -101,5 +111,12 @@
         bottom: 0;
         transform: translateY(-1em);
         max-width: to_rem(350);
+    }
+}
+
+
+@media (min-width: 1500px) {
+    .banner__container h1 {
+        font-size: 8em;
     }
 }

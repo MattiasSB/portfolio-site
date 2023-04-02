@@ -39,11 +39,12 @@
 
 @media (max-width: $breakpoint__mobile) { 
     .work__design {
-        height: 70vh;
-        padding-top: 15%;
+        height: fit-content;
+        padding: 15% 0;
     }
     .work__development {
-        height: 70vh;
+        height: fit-content;
+        padding: 15% 0;
     }
     .work .text__md {
         font-size: 1.8em;

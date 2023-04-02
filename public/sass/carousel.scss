@@ -4,6 +4,11 @@
     margin: 5% 0%;
 }
 
+.home .carousel, .work__development .carousel {
+    opacity: 0;
+    transform: translateY(-4vw);
+}   
+
 .projects .carousel-cell {
     width: fit-content;
     height: fit-content;

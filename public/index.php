@@ -10,23 +10,25 @@
 @require("partials/head.php");
 ?>
 <body>
-    <?php 
-    @require("partials/header.php");
+<?php @require('partials/header.php');
+    @require('partials/scroll__marker.php')
     ?>
-    <main>
-        <section class="intro font__staatliches slide__in">
+    <main class="home">
+        <section class="intro font__staatliches">
             <div class="intro__container position__relative flex items__center filter__shadow">
-                <h1 class="text__xl text__black position__relative line__height--120"><span class="text__orange">Developing</span > design into digital <span class="text__white">solutions</span></h1>
-                <img class="position__absolute rounded" src="img/forrest__photo.jpg" alt="">
+                <div class="position__relative flex justify__center">
+                    <h1 class="text__xl text__black position__relative line__height--120"><span class="text__orange">Developing</span > design into digital <span class="text__white">solutions</span></h1>
+                    <img class="position__absolute rounded" src="img/forrest__photo.jpg" alt="">
+                </div>
             </div>
         </section>
-        <section class="projects slide__in">
+        <div class="projects">
             <div class="carousel" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
                 <?php foreach($homeScroll as $cardInfo): ?>
                     <?php include(get_path('public/partials/carousel__card.php'));?>
                 <?php endforeach; ?>
             </div>
-        </section>
+        </div>
         <section class="max__w--container mx__auto">
             <div class="intro__about grid grid__template--cols-12"> 
                 <img class="filter__shadow rounded mx__auto" src="img/self__photo.jpg" alt="Photo of me with my brother" width="400" height="375">
@@ -38,8 +40,11 @@
         </section>
         <?php @require('partials/social__modal.php'); ?>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="scripts/flickity.pkgd.min.js" defer></script>
     <script src="scripts/menu.js?v=1.1" defer></script>
     <script src="scripts/pagedetect.js?v=1" defer></script>
+    
 </body>
 </html>
