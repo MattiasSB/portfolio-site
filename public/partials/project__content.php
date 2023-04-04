@@ -18,7 +18,7 @@
     </section>
     <section class="story__explanation max__w--container mx__auto flex flex__cols">
         <div class="description__p mx__auto">
-            <h2 class="text__lg font__staatliches">Brief Story</h2>
+            <h2 class="text__lg font__staatliches text__center">Brief Story</h2>
             <p class="text__md font__spacegrotesk--400">
             <?php echo ($Projects->briefExplanation)?>
             </p>

@@ -548,9 +548,127 @@ https://flickity.metafizzy.co
     font-size: 1.8em;
   }
 }
+.banner__container {
+  width: fit-content;
+  height: fit-content;
+}
+
+.banner__container h1 {
+  font-size: 6.5vw;
+  bottom: 0;
+  transform: translateY(-1em);
+  width: 85vw;
+  max-width: 62.5rem;
+}
+
+.banner__image {
+  object-fit: cover;
+  aspect-ratio: 1000/400;
+  border-radius: 1em;
+  width: 85vw;
+  height: 100vh;
+  margin-top: 20vh;
+  max-height: 25rem;
+  max-width: 62.5rem;
+}
+
+.about .carousel {
+  margin: 2em 0;
+}
+
+.about .carousel-cell {
+  padding: 1em;
+}
+
+.about__card h4, .about p {
+  padding: 1em;
+}
+
+.about__card h2, .about__card h3 {
+  padding: 1em 0.5em 0.5em 0.5em;
+}
+
+.about__card h2, .about__card p, .about__card h4, .about__card h1 {
+  line-height: 1.25em;
+}
+
+.about .carousel-card h3 {
+  font-size: 8em;
+}
+
+.about .carousel, .banner__container {
+  opacity: 0;
+}
+
+.about__card {
+  height: 80vh;
+  width: 30vw;
+  border-radius: 1em;
+  background: #231F20;
+  width: 21.875rem;
+  height: 34.375rem;
+}
+
+.about__card--content p {
+  font-size: 1em;
+  color: #F1F0F0;
+  margin: 1em;
+}
+
+.social__links {
+  color: #F1F0F0;
+  text-decoration: underline;
+  font-size: 1em;
+  padding: 1em;
+}
+
+.schooling {
+  margin-top: 2em;
+}
+
+.schooling svg {
+  margin: 0 45%;
+  rotate: 90deg;
+}
+
+.card__arrow--right {
+  bottom: 1em;
+  right: 1em;
+}
+
+.card__arrow--right svg {
+  padding-left: 0.5em;
+}
+
+@media (max-width: 940px) {
+  .banner__image {
+    max-height: 21.875rem;
+    max-width: 62.5rem;
+  }
+}
+@media (max-width: 540px) {
+  .banner__image {
+    max-height: 15.625rem;
+    max-width: 21.875rem;
+  }
+  .banner__container h1 {
+    font-size: 6.5vw;
+    bottom: 0;
+    transform: translateY(-1em);
+    max-width: 21.875rem;
+  }
+}
+@media (min-width: 1500px) {
+  .banner__container h1 {
+    font-size: 8em;
+  }
+}
 .story__explanation, .work__stages {
   padding: 10vh 0;
   line-height: 1.2em;
+}
+.story__explanation .text__md, .work__stages .text__md {
+  font-size: 1.4em;
 }
 @media (max-width: 940px) {
   .story__explanation .text__xl, .work__stages .text__xl {
@@ -560,9 +678,6 @@ https://flickity.metafizzy.co
 @media (max-width: 540px) {
   .story__explanation .text__md, .work__stages .text__md {
     font-size: 1em;
-  }
-  .story__explanation h3, .work__stages h3 {
-    margin-left: 0.3em;
   }
 }
 .story__explanation .description__p, .work__stages .description__p {
@@ -577,6 +692,7 @@ https://flickity.metafizzy.co
 .story__explanation h3, .work__stages h3 {
   margin-top: 1em;
   padding: 0.3em;
+  text-align: center;
 }
 .story__explanation h3, .story__explanation h2, .work__stages h3, .work__stages h2 {
   line-height: 1.2em;
@@ -584,11 +700,11 @@ https://flickity.metafizzy.co
 
 .work__stages h3 {
   padding: 0.3em;
-  margin-left: 0.6em;
+  text-align: center;
 }
 .work__stages ul li {
   list-style: circle;
-  margin-left: 2.4em;
+  margin: 1em 2.4em;
 }
 
 .background__black {
@@ -600,8 +716,28 @@ pre {
   font-size: 14px;
   line-height: 1.4;
   overflow-x: auto;
-  margin-top: 2em;
+  margin: 2em 0;
   padding: 1em 0;
+}
+
+.image__container {
+  max-width: 100%;
+  height: 23.4375rem;
+  max-height: 100%;
+  overflow: auto;
+  border: 1px solid black;
+  background: black;
+  margin: 2em 0;
+}
+
+.image__container svg {
+  display: block;
+  margin: auto;
+  padding: 3em;
+}
+
+.image__container svg {
+  background: #F1F0F0;
 }
 
 code.language-javascript {
@@ -612,6 +748,7 @@ code.language-javascript {
 iframe {
   width: 100%;
   margin: 1em 0;
+  max-height: 80vh;
 }
 
 .chevron {
@@ -922,121 +1059,6 @@ Spacing
   }
   .button__black a {
     font-size: 2em;
-  }
-}
-.banner__container {
-  width: fit-content;
-  height: fit-content;
-}
-
-.banner__container h1 {
-  font-size: 6.5vw;
-  bottom: 0;
-  transform: translateY(-1em);
-  width: 85vw;
-  max-width: 62.5rem;
-}
-
-.banner__image {
-  object-fit: cover;
-  aspect-ratio: 1000/400;
-  border-radius: 1em;
-  width: 85vw;
-  height: 100vh;
-  margin-top: 20vh;
-  max-height: 25rem;
-  max-width: 62.5rem;
-}
-
-.about .carousel {
-  margin: 2em 0;
-}
-
-.about .carousel-cell {
-  padding: 1em;
-}
-
-.about__card h4, .about p {
-  padding: 1em;
-}
-
-.about__card h2, .about__card h3 {
-  padding: 1em 0.5em 0.5em 0.5em;
-}
-
-.about__card h2, .about__card p, .about__card h4, .about__card h1 {
-  line-height: 1.25em;
-}
-
-.about .carousel-card h3 {
-  font-size: 8em;
-}
-
-.about .carousel, .banner__container {
-  opacity: 0;
-}
-
-.about__card {
-  height: 80vh;
-  width: 30vw;
-  border-radius: 1em;
-  background: #231F20;
-  width: 21.875rem;
-  height: 34.375rem;
-}
-
-.about__card--content p {
-  font-size: 1em;
-  color: #F1F0F0;
-  margin: 1em;
-}
-
-.social__links {
-  color: #F1F0F0;
-  text-decoration: underline;
-  font-size: 1em;
-  padding: 1em;
-}
-
-.schooling {
-  margin-top: 2em;
-}
-
-.schooling svg {
-  margin: 0 45%;
-  rotate: 90deg;
-}
-
-.card__arrow--right {
-  bottom: 1em;
-  right: 1em;
-}
-
-.card__arrow--right svg {
-  padding-left: 0.5em;
-}
-
-@media (max-width: 940px) {
-  .banner__image {
-    max-height: 21.875rem;
-    max-width: 62.5rem;
-  }
-}
-@media (max-width: 540px) {
-  .banner__image {
-    max-height: 15.625rem;
-    max-width: 21.875rem;
-  }
-  .banner__container h1 {
-    font-size: 6.5vw;
-    bottom: 0;
-    transform: translateY(-1em);
-    max-width: 21.875rem;
-  }
-}
-@media (min-width: 1500px) {
-  .banner__container h1 {
-    font-size: 8em;
   }
 }
 

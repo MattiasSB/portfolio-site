@@ -1,5 +1,9 @@
 .story__explanation, .work__stages {
     padding: 10vh 0;
+    .text__md {
+        font-size: 1.4em;
+    }
+    
     @media (max-width: $breakpoint__tablet) {
         .text__xl {
             padding: 0.6em;
@@ -9,9 +13,6 @@
     @media (max-width: $breakpoint__mobile) {
         .text__md {
             font-size: 1em;
-        }
-        h3 {
-            margin-left: 0.3em;
         }
     }
 
@@ -28,7 +29,7 @@
     h3 {
         margin-top: 1em;
         padding: 0.3em;
-        
+        text-align: center;
     }
 
     h3, h2 {
@@ -40,11 +41,11 @@
 .work__stages {
     h3 {
         padding: 0.3em;
-        margin-left: 0.6em;
+        text-align: center;
     }
     ul li {
         list-style: circle;
-        margin-left: 2.4em;
+        margin: 1em 2.4em;
     }
 
 }
@@ -58,8 +59,28 @@ pre {
     font-size: 14px;
     line-height: 1.4;
     overflow-x: auto;
-    margin-top: 2em;
+    margin: 2em 0;
     padding: 1em 0;
+}
+
+.image__container {
+    max-width: 100%;
+    height: to_rem(375);
+    max-height: 100%;
+    overflow: auto;
+    border: 1px solid black;
+    background: black;
+    margin: 2em 0;
+}
+
+.image__container svg {
+    display: block;
+    margin: auto;
+    padding: 3em;
+}
+
+.image__container svg{
+    background: $white;
 }
 
 code.language-javascript {
@@ -70,5 +91,7 @@ code.language-javascript {
 iframe {
     width: 100%;
     margin: 1em 0;
+    max-height: 80vh;
 }
+
 

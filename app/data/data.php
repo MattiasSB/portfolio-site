@@ -108,7 +108,7 @@ $botanicalProject = new Projects([
     'buttonTwoTitle' => 'Link to Adobe XD prototype',
     'buttonTwoContent' => 'Figma',
     'briefExplanation' => 'The <span class="text__orange">Botanical</span> prototype is a e-commerce application for a plant store. It featured an initial planning phase consisting of user flows, personas, and mind mapping which contributed to a successful user testing phase.',
-    'longExplanation' => 'This project was meant to demonstrate a functional prototype with feasibility in mind. This involved rigorous planning stages as well as creating the fictional botanical identity. <br><br> The first part of planning consisted of a mind map, of potential brand identities to create an application around. The next steps involved mapping the user flows, and developing user personas to better understand the end user.  From there my focus was on creating an intuitive app interface in accordance with my planning document(s) specifications. '
+    'longExplanation' => 'This project was meant to demonstrate my ability to create a functional prototype with feasibility in mind. This involved rigorous planning stages as well as creating the fictional botanical identity. <br><br> The first part of planning consisted of a mind map, of potential brand identities to create an application around. The next steps involved mapping the user flows, and developing user personas to better understand the end user.  From there my focus was on creating an intuitive app interface in accordance with my planning document(s) specifications. '
 ]);
 
 $projectOne = new Projects([
@@ -134,10 +134,26 @@ $projectFour = new Projects([
 ]);
 
 $projectFive = new Projects([
-    'projectSectionHeading1' => 'Initial Process',
-    'projectParagraph1' => 'This consisted of creating a menu, and adding keyboard commands to navigate the menu (the not very fun stuffs). Ultimately upon completing the menu, and bug fixes, I had reached version 6, and it was time to release my project.'
+    'projectSectionHeading1' => 'Botanical Branding',
+    'projectParagraph1' => "In this project the focus was on intuitive user experience design, and therefore the branding for the fictional botanical company wasn't a priority. I quickly hopped in illustrator and developed a logo resembling the following",
+    'projectSectionHeading2' => 'Mockup Stylesheet'
 ]);
 
+$projectSix = new Projects([
+    'projectSectionHeading1' => 'User Flow',
+    'projectParagraph1' => "The next step in the creation of this prototype revolved around understanding the functionality which was to be implemented. As a necessary intermediary step, I began to mock a typical user flow to better understand my goals in relation to the users."
+]);
+
+$projectSeven = new Projects([
+    'projectSectionHeading1' => 'Interactive Prototype',
+    'projectParagraph1' => "Upon completing some of the more ancillary processes such as some User Persona's and a user scenario, I began on my prototype. I quickly developed my interface and began mocking my functionality, after a couple of hours of work I was ready to move to user testing.",
+    'projectSectionHeading2' => 'Functions included'
+]);
+
+$projectEight = new Projects([
+    'projectSectionHeading1' => 'User Testing Phase',
+    'projectParagraph1' => "From here, a series of UseBerry user tests revolving around these functions. The data was extrapolated and formalized into a report which ultimately concluded the project. The report provides insight as to potential improvements to be made. The testing ultimately concluded and the design was intuitive and successful"
+]);
 
 $marketshareHeaderImg = new Projects([
     'source' => '#',
@@ -153,7 +169,7 @@ $marketshareHeaderImg = new Projects([
 
 
 $ProjectsArray = [
-    $bottleShooterProject, $projectOne, $projectTwo,  $marketshareHeaderImg, $botanicalProject, $projectFive
+    $bottleShooterProject, $projectOne, $projectTwo,  $marketshareHeaderImg, $botanicalProject, $projectFive, $projectSix, $projectSeven, $projectEight
 ]
 
 ?>

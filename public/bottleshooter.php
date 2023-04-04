@@ -31,25 +31,25 @@ $projectOne = $ProjectsArray[1];
                     <li>How to make the respawns at all</li>
                 </ul>
                 <h3 class="text__md font__staatliches">My Solution:</h3>
-<pre class="rounded filter__shadow">
-    <code class="language-javascript">
-    function gifMe(){
-    <span class="text__orange">/*--------------------------Bottle 1---------------------------*/ </span>
-        if(newBottleDetect &#60; 1 && adsDetect == true){
-            visBottle.style.backgroundImage = GifOne;
-            <span class="text__orange">
-            //finds and removes one after specified index from the array of bottles.
-            //index is the random array
-            </span >
-            newBottleDetect = 1;
-            bottleVisibility.splice(bottleVisibility.indexOf(visBottle), 1);
-            visBottle2 = bottleVisibility[Math.floor(Math.random()*bottleVisibility.length)];
-            visBottle2.style.visibility = "visible";
-        };
-    }
+                <pre class="rounded filter__shadow">
+                    <code class="language-javascript">
+                    function gifMe(){
+                    <span class="text__orange">/*--------------------------Bottle 1---------------------------*/ </span>
+                        if(newBottleDetect &#60; 1 && adsDetect == true){
+                            visBottle.style.backgroundImage = GifOne;
+                            <span class="text__orange">
+                            //finds and removes one after specified index from the array of bottles.
+                            //index is the random array
+                            </span >
+                            newBottleDetect = 1;
+                            bottleVisibility.splice(bottleVisibility.indexOf(visBottle), 1);
+                            visBottle2 = bottleVisibility[Math.floor(Math.random()*bottleVisibility.length)];
+                            visBottle2.style.visibility = "visible";
+                        };
+                    }
 
-    </code>
-</pre>
+                    </code>
+                </pre>
             </div>
         </div>
     </section>
@@ -59,27 +59,26 @@ $projectOne = $ProjectsArray[1];
                 <h2 class="text__center font__staatliches text__lg"><?php echo ($projectTwo->projectSectionHeading1)?></h2>
                 <p class="text__md font__spacegrotesk--400"><?php echo ($projectTwo->projectParagraph1)?></p>
                 <h3 class="text__md font__staatliches">My Solution:</h3>
-<pre class="rounded filter__shadow">
-    <code class="language-javascript">
-    function gifMe(){
-    <span class="text__orange">/*--------------------------Bottle 1---------------------------*/ </span>
-        if(newBottleDetect &#60; 1 && adsDetect == true){
-            visBottle.style.backgroundImage = GifOne;
-            <span class="text__orange">
-            //finds and removes one after specified index from the array of bottles.
-            //index is the random array
-            </span >
-            newBottleDetect = 1;
-            bottleVisibility.splice(bottleVisibility.indexOf(visBottle), 1);
-            visBottle2 = bottleVisibility[Math.floor(Math.random()*bottleVisibility.length)];
-            visBottle2.style.visibility = "visible";
-        };
-    }
+                <pre class="rounded filter__shadow">
+                    <code class="language-javascript">
+                    function gifMe(){
+                    <span class="text__orange">/*--------------------------Bottle 1---------------------------*/ </span>
+                        if(newBottleDetect &#60; 1 && adsDetect == true){
+                            visBottle.style.backgroundImage = GifOne;
+                            <span class="text__orange">
+                            //finds and removes one after specified index from the array of bottles.
+                            //index is the random array
+                            </span >
+                            newBottleDetect = 1;
+                            bottleVisibility.splice(bottleVisibility.indexOf(visBottle), 1);
+                            visBottle2 = bottleVisibility[Math.floor(Math.random()*bottleVisibility.length)];
+                            visBottle2.style.visibility = "visible";
+                        };
+                    }
 
-    </code>
-</pre>
-<p class="text__md  font__spacegrotesk--400"><?php echo($projectTwo->projectSectionHeading2)?></p>
-
+                    </code>
+                </pre>
+                <p class="text__md  font__spacegrotesk--400"><?php echo($projectTwo->projectSectionHeading2)?></p>
             </div>
         </div>
     </section>

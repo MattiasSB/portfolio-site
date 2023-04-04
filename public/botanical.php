@@ -9,6 +9,9 @@
 <?php 
 $Projects = $ProjectsArray[4];
 $projectOne = $ProjectsArray[5];
+$projectTwo = $ProjectsArray[6];
+$projectThree = $ProjectsArray[7];
+$projectFour = $ProjectsArray[8];
 @require("partials/head.php");
 ?>
 <body class="project__item">
@@ -24,31 +27,12 @@ $projectOne = $ProjectsArray[5];
             <div class="description__p mx__auto">
                 <h2 class="text__center font__staatliches text__lg"><?php echo ($projectOne->projectSectionHeading1)?></h2>
                 <p class="text__md font__spacegrotesk--400"><?php echo ($projectOne->projectParagraph1)?></p>
-                <h3 class="text__md  font__spacegrotesk--700"><?php echo($projectOne->projectSectionHeading2)?></h3>
-                <ul class="font__spacegrotesk--400 text__md">
-                    <li>How to make bottle respawns random</li>
-                    <li>How to make the respawns at all</li>
-                </ul>
-                <h3 class="text__md font__staatliches">My Solution:</h3>
-<pre class="rounded filter__shadow">
-    <code class="language-javascript">
-    function gifMe(){
-    <span class="text__orange">/*--------------------------Bottle 1---------------------------*/ </span>
-        if(newBottleDetect &#60; 1 && adsDetect == true){
-            visBottle.style.backgroundImage = GifOne;
-            <span class="text__orange">
-            //finds and removes one after specified index from the array of bottles.
-            //index is the random array
-            </span >
-            newBottleDetect = 1;
-            bottleVisibility.splice(bottleVisibility.indexOf(visBottle), 1);
-            visBottle2 = bottleVisibility[Math.floor(Math.random()*bottleVisibility.length)];
-            visBottle2.style.visibility = "visible";
-        };
-    }
-
-    </code>
-</pre>
+                <h3 class="text__md  font__spacegrotesk--700"><?php echo($projectOne->projectSectionHeading2)?>:</h3>
+                <div class="image__container rounded filter__shadow flex items__center justify__center">
+                    <svg viewBox="0 0 463.04 695.37" preserveAspectRatio="xMidYMid meet">
+                        <image id="styleguide__botanical" href="img/project-botanical__styleguide.svg" width="463.04" height="695.37" />
+                    </svg>
+                </div>
             </div>
         </div>
     </section>
@@ -57,27 +41,12 @@ $projectOne = $ProjectsArray[5];
             <div class="description__p mx__auto">
                 <h2 class="text__center font__staatliches text__lg"><?php echo ($projectTwo->projectSectionHeading1)?></h2>
                 <p class="text__md font__spacegrotesk--400"><?php echo ($projectTwo->projectParagraph1)?></p>
-                <h3 class="text__md font__staatliches">My Solution:</h3>
-<pre class="rounded filter__shadow">
-    <code class="language-javascript">
-    function gifMe(){
-    <span class="text__orange">/*--------------------------Bottle 1---------------------------*/ </span>
-        if(newBottleDetect &#60; 1 && adsDetect == true){
-            visBottle.style.backgroundImage = GifOne;
-            <span class="text__orange">
-            //finds and removes one after specified index from the array of bottles.
-            //index is the random array
-            </span >
-            newBottleDetect = 1;
-            bottleVisibility.splice(bottleVisibility.indexOf(visBottle), 1);
-            visBottle2 = bottleVisibility[Math.floor(Math.random()*bottleVisibility.length)];
-            visBottle2.style.visibility = "visible";
-        };
-    }
-
-    </code>
-</pre>
-<p class="text__md  font__spacegrotesk--400"><?php echo($projectTwo->projectSectionHeading2)?></p>
+                <h3 class="text__md font__staatliches">User Flow</h3>
+                <div class="image__container rounded filter__shadow flex items__center justify__center">
+                    <svg viewBox="-0.5 -0.5 822 1152" preserveAspectRatio="xMidYMid meet">
+                        <image href="img/project-botanical__user-flow.svg" width="822" height="1152" />
+                    </svg>
+                </div>
 
             </div>
         </div>
@@ -88,15 +57,13 @@ $projectOne = $ProjectsArray[5];
             <div class="description__p mx__auto">
                 <h2 class="text__center font__staatliches text__lg"><?php echo ($projectThree->projectSectionHeading1)?></h2>
                 <p class="text__md font__spacegrotesk--400"><?php echo ($projectThree->projectParagraph1)?></p>
+                <h3 class="text__md font__staatliches"><?php echo ($projectThree->projectSectionHeading2)?></h3>
                 <ul class="font__spacegrotesk--400 text__md">
-                    <li>Background</li>
-                    <li>Bucket (For bottles to sit on)</li>
-                    <li>Bottle</li>
-                    <li>Clouds</li>
-                    <li>Bird (P.S. Don't shoot him)</li>
+                    <li>Purchase a cactus!!</li>
+                    <li>Log in or sign up for an account</li>
+                    <li>Visit your account dashboard</li>
                 </ul>
-                <h3 class="text__md font__staatliches">My Solution:</h3>
-                <iframe class="filter__shadow rounded" src="https://bottleshooter.mattiasbellan.ca" height="700"></iframe>
+                <iframe class="filter__shadow" width="428" height="926" src="https://xd.adobe.com/embed/169f94d0-df46-498e-83f7-98be90ab1e22-43cc/" allowfullscreen></iframe>
             </div>
         </div>
     </section>
