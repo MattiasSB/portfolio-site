@@ -87,7 +87,7 @@ $projectFour = $ProjectsArray[8];
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="scripts/flickity.pkgd.min.js" defer></script>
-    <script src="scripts/menu.js?v=1" defer></script>
-    <script src="scripts/pagedetect.js?v=1" defer></script> 
+    <script src="scripts/menu.js?v=1.1" defer></script>
+    <script src="scripts/pagedetect.js?v=1.1" defer></script> 
 </body>
 </html>
