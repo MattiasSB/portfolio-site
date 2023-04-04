@@ -28,7 +28,7 @@ $projectFour = $ProjectsArray[8];
                 <h2 class="text__center font__staatliches text__lg"><?php echo ($projectOne->projectSectionHeading1)?></h2>
                 <p class="text__md font__spacegrotesk--400"><?php echo ($projectOne->projectParagraph1)?></p>
                 <h3 class="text__md  font__spacegrotesk--700"><?php echo($projectOne->projectSectionHeading2)?>:</h3>
-                <div class="image__container rounded filter__shadow flex items__center justify__center">
+                <div class="image__container rounded filter__shadow">
                     <svg viewBox="0 0 463.04 695.37" preserveAspectRatio="xMidYMid meet">
                         <image id="styleguide__botanical" href="img/project-botanical__styleguide.svg" width="463.04" height="695.37" />
                     </svg>
@@ -42,7 +42,7 @@ $projectFour = $ProjectsArray[8];
                 <h2 class="text__center font__staatliches text__lg"><?php echo ($projectTwo->projectSectionHeading1)?></h2>
                 <p class="text__md font__spacegrotesk--400"><?php echo ($projectTwo->projectParagraph1)?></p>
                 <h3 class="text__md font__staatliches">User Flow</h3>
-                <div class="image__container rounded filter__shadow flex items__center justify__center">
+                <div class="image__container rounded filter__shadow">
                     <svg viewBox="-0.5 -0.5 822 1152" preserveAspectRatio="xMidYMid meet">
                         <image href="img/project-botanical__user-flow.svg" width="822" height="1152" />
                     </svg>
