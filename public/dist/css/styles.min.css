@@ -100,6 +100,10 @@ https://flickity.metafizzy.co
   margin: 5% 0%;
 }
 
+.home .carousel, .work__development .carousel {
+  opacity: 0;
+}
+
 .projects .carousel-cell {
   width: fit-content;
   height: fit-content;
@@ -585,6 +589,10 @@ https://flickity.metafizzy.co
 
 .about .carousel-card h3 {
   font-size: 8em;
+}
+
+.about .carousel, .banner__container {
+  opacity: 0;
 }
 
 .about__card {

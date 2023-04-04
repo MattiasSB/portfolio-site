@@ -46,6 +46,10 @@
     font-size: 8em;
 }
 
+.about .carousel, .banner__container {
+    opacity: 0;
+}
+
 .about__card {
     height: 80vh;
     width: 30vw;
