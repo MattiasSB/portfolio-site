@@ -9,5 +9,5 @@
     <meta name="description" content="<?php echo $metaDescription?>"> 
     <link rel="icon" type="image/svg" href="img/Logo.svg">
     <title>Portfolio <?php echo $titleTag?> - Mattias Bellan</title>
-    <link rel="stylesheet" href="dist/css/styles.min.css?v=1.3">
+    <link rel="stylesheet" href="dist/css/styles.min.css?v=1.4">
 </head>
