@@ -52,7 +52,7 @@ $projectFour = $ProjectsArray[7];
         </div>
     </section>
 
-    <section class="work__stages background__black description__p mx__auto text__white">
+    <section id="botanicalPrototype" class="work__stages background__black description__p mx__auto text__white">
         <div class="mx__auto max__w--container">
             <div class="description__p mx__auto">
                 <h2 class="text__center font__staatliches text__lg"><?php echo ($projectThree->projectSectionHeading1)?></h2>

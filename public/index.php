@@ -18,7 +18,7 @@
             <div class="intro__container position__relative flex items__center filter__shadow">
                 <div class="position__relative flex justify__center">
                     <h1 class="text__xl text__black position__relative line__height--120"><span class="text__orange">Developing</span > design into digital <span class="text__white">solutions</span></h1>
-                    <img class="position__absolute rounded" src="img/forrest__photo.jpg" alt="">
+                    <img class="position__absolute rounded" src="img/forrest__photo.webp" alt="A photo of a staircase leading into a forrest">
                 </div>
             </div>
         </section>
@@ -31,7 +31,7 @@
         </div>
         <section class="max__w--container mx__auto">
             <div class="intro__about grid grid__template--cols-12"> 
-                <img class="filter__shadow rounded mx__auto" src="img/self__photo.jpg" alt="Photo of me with my brother" width="400" height="375">
+                <img class="filter__shadow rounded mx__auto" src="img/self__photo.webp" alt="Photo of me with my brother" width="400" height="375">
                 <div class="flex flex__cols items__center intro__about--text mx__auto">
                     <h2 class="font__spacegrotesk--700">My name is <span class="text__orange">Mattias Bellan</span >. Im a life long learner, striving to <span class="text__orange">innovate</span> and <span class="text__orange">empower</span> through digital design and development.</h2>
                     <div class="button__black flex justify__center items__center filter__shadow"><a class="font__staatliches" href="<?php echo get_public_url('/about.php'); ?>" title="More information about me">About me</a></div>

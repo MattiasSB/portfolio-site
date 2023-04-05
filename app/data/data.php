@@ -8,18 +8,18 @@ $bottleShooter = new cardInfo([
     'alt' => 'Monitor displaying Bottle Shooter web game',
     'projectName' => 'BottleShooter',
     'projectType' => ' HTML Game',
-    'imageSource' => '/project-bottleshooter.jpg',
+    'imageSource' => '/project-bottleshooter.webp',
     'height' => '400',
     'width' => '400'
 ]);
 
 $dash = new cardInfo([
-    'source' => '#',
+    'source' => 'dash.php',
     'title' => 'responsive website project information',
     'alt' => 'Monitor displaying DASH website',
     'projectName' => 'DASH',
     'projectType' => ' Responsive Website',
-    'imageSource' => '/project-dash.jpg',
+    'imageSource' => '/project-dash.webp',
     'height' => '400',
     'width' => '400'
 ]);
@@ -30,7 +30,7 @@ $botanical = new cardInfo([
     'alt' => 'Phone displaying Botanical prototype',
     'projectName' => 'Botanical',
     'projectType' => ' Mobile Prototype',
-    'imageSource' => '/project-botanical.jpg',
+    'imageSource' => '/project-botanical.webp',
     'height' => '400',
     'width' => '500'
 ]);
@@ -41,7 +41,7 @@ $guitar = new cardInfo([
     'alt' => 'Magazine displaying Guitar Monthly Magazine',
     'projectName' => 'Guitar Monthly',
     'projectType' => ' Magazine',
-    'imageSource' => '/project-guitar.jpg',
+    'imageSource' => '/project-guitar.webp',
     'height' => '400',
     'width' => '400'
 ]);
@@ -52,7 +52,7 @@ $marketshare = new cardInfo([
     'alt' => 'Phone displaying MarketShare prototype',
     'projectName' => 'MarketShare',
     'projectType' => ' Mobile Prototype',
-    'imageSource' => '/project-marketshare.jpg',
+    'imageSource' => '/project-marketshare.webp',
     'height' => '400',
     'width' => '400'
 ]);
@@ -76,7 +76,7 @@ $bottleShooterProject = new Projects([
     'alt' => 'Monitor displaying Bottle Shooter web game',
     'projectName' => 'BottleShooter',
     'projectType' => ' HTML Game',
-    'imageSource' => '/project-bottleshooter.jpg',
+    'imageSource' => '/project-bottleshooter.webp',
     'height' => '400',
     'width' => '400',
     'introHeadingContent' => 'BottleShooter',
@@ -120,15 +120,15 @@ $botanicalProject = new Projects([
     'alt' => 'Phone displaying botanical gardens prototype',
     'projectName' => 'Botanical',
     'projectType' => ' Interactive Prototype',
-    'imageSource' => '/project-botanical.jpg',
+    'imageSource' => '/project-botanical.webp',
     'height' => '400',
     'width' => '500',
     'introHeadingContent' => 'Botanical',
     'introParagraphContent' => 'BOTANICAL IS AN <span class="text__orange">INTERACTIVE PROTOTYPE</span> CREATED IN ADOBE XD, FEATURING MULTIPLE <span class="text__orange">FUNCTIONAL PROCESSES</span>.',
-    'buttonOneLink' => 'https://www.bottleshooter.mattiasbellan.ca/',
+    'buttonOneLink' => '#botanicalPrototype',
     'buttonOneTitle' => 'Link to Adobe Xd prototype',
     'buttonOneContent' => 'Try Now',
-    'buttonTwoLink' => 'https://github.com/MattiasSB/bottleshooter',
+    'buttonTwoLink' => 'https://xd.adobe.com/view/d8a21240-e366-46d8-b5a4-a98c785dfcaa-8df1/?fullscreen',
     'buttonTwoTitle' => 'Link to Adobe XD prototype',
     'buttonTwoContent' => 'Adobe XD',
     'briefExplanation' => 'The <span class="text__orange">Botanical</span> prototype is a e-commerce application for a plant store. It featured an initial planning phase consisting of user flows, personas, and mind mapping which contributed to a successful user testing phase.',
@@ -169,15 +169,15 @@ $marketShareProject = new Projects([
     'alt' => 'Phone displaying MarketShare prototype',
     'projectName' => 'Market Share',
     'projectType' => ' Interactive Prototype',
-    'imageSource' => '/project-marketshare.jpg',
+    'imageSource' => '/project-marketshare.webp',
     'height' => '400',
     'width' => '400',
     'introHeadingContent' => 'MarketShare',
     'introParagraphContent' => 'MarketShare <span class="text__orange">is an interactive prototype</span> created in Figma, featuring multiple <span class="text__orange">functional processes</span>.',
-    'buttonOneLink' => 'https://www.bottleshooter.mattiasbellan.ca/',
+    'buttonOneLink' => 'https://www.figma.com/file/GuxCnUI2zNX8urbfBhLWzi/PROJECT-2?node-id=1%3A2&t=RMgShP22WN3fL8vh-1',
     'buttonOneTitle' => 'Link to Figma prototype',
     'buttonOneContent' => 'Try Now',
-    'buttonTwoLink' => 'https://github.com/MattiasSB/bottleshooter',
+    'buttonTwoLink' => '#marketsharePrototype',
     'buttonTwoTitle' => 'Link to Figma prototype',
     'buttonTwoContent' => 'Figma',
     'briefExplanation' => 'The <span class="text__orange">MarketShare</span> prototype is an endless swipe interface (similar to apps like Tinder) for an online marketplace. It featured an initial planning phase consisting of user flows, personas, and mind mapping which contributed to a successful user testing phase.',
@@ -211,7 +211,7 @@ $guitarMonthlyProject = new Projects([
     'alt' => 'Guitar Monthly Magazine Mockup',
     'projectName' => 'Guitar Monthly',
     'projectType' => ' Magazine',
-    'imageSource' => '/project-guitar.jpg',
+    'imageSource' => '/project-guitar.webp',
     'height' => '400',
     'width' => '400',
     'introHeadingContent' => 'Guitar Monthly',
@@ -247,11 +247,48 @@ $projectSixteen = new Projects([
     'projectParagraph1' => "From here, a series of UseBerry user tests revolving around these functions. The data was extrapolated and formalized into a report which ultimately concluded the project. The report provides insight as to potential improvements to be made. The testing ultimately concluded and the design was intuitive and successful."
 ]);
 
+$dashProject = new Projects([
+    'source' => 'dash.php',
+    'title' => 'Dash Yogurt',
+    'alt' => 'Dash Yogurt Company Website',
+    'projectName' => 'Dash Yogurt Company',
+    'projectType' => ' Responsive Site',
+    'imageSource' => '/project-dash.webp',
+    'height' => '400',
+    'width' => '400',
+    'introHeadingContent' => 'Dash Yogurt Company',
+    'introParagraphContent' => "<span class='text__orange'>DASH yogurt company site</span> was a cohesive design and development process, with an emphasis on creating actionable designs for development.",
+    'buttonOneLink' => 'https://dash-yogurt.mattiasbellan.ca/',
+    'buttonOneTitle' => 'Dash Yogurt company website',
+    'buttonOneContent' => 'View Site',
+    'buttonTwoLink' => 'https://www.figma.com/file/tl3EwDGsF8HCd5WNt9hzmg/Untitled?node-id=0%3A1&t=VA1TmOxpKvBrwpeL-1',
+    'buttonTwoTitle' => 'Figma file',
+    'buttonTwoContent' => 'Figma',
+    'briefExplanation' => 'The DASH Yogurt Company website is a responsive website developed with Tailwind CSS, and designed in Figma. It featured a single page previewed on multiple screen sizes. From there it was developed, and the lightbox plugin was added for images.',
+    'longExplanation' => "The DASH Yogurt Company website was developed with Tailwind CSS and designed in Figma. It features a responsive single-page design that was previewed on multiple screen sizes, ensuring it looks and performs flawlessly across devices. A lightbox plugin was added for images, allowing users to view them in a larger format without navigating to a separate page.
+    <br><br>
+    The website was developed with a focus on clean, efficient, and optimized code to ensure optimal performance. The result is a visually stunning and functional website that showcases the benefits of responsive design, CSS frameworks, and design tools. The DASH Yogurt Company website is an excellent example of how a website can meet both the client's and user's needs."
+]);
 
+$projectNineteen = new Projects([
+    'projectSectionHeading1' => 'DASH Yogurt Company Logos',
+    'projectParagraph1' => "The logos were designed in Adobe Illustrator, and featured original graphics, and color scheme. The logo was to be implemented on the site as well, and thus it needed to be memorable, and smaller profile. ",
+    'projectSectionHeading2' => 'Mockup Stylesheet'
+]);
+
+$projectTwenty = new Projects([
+    'projectSectionHeading1' => 'DASH Figma Prototype',
+    'projectParagraph1' => "Using Figma it was now time to mockup the three targeted screen sizes, this was done specifically to make development as streamlined as possible, while still having a good looking design."
+]);
+
+$projectTwelve = new Projects([
+    'projectSectionHeading1' => 'Live Site',
+    'projectParagraph1' => "Next i rapidly developed the site making slight adjustments to account for design feedback. The Dash responsive site is now live"
+]);
 
 
 $ProjectsArray = [
-    $bottleShooterProject, $projectOne, $projectTwo, $botanicalProject, $projectFive, $projectSix, $projectSeven, $projectEight, $marketShareProject, $projectNine, $projectTen, $projectEleven, $projectTwelve, $guitarMonthlyProject, $projectThirteen, $projectFourteen, $projectFifteen, $projectSixteen, $projectSeventeen
+    $bottleShooterProject, $projectOne, $projectTwo, $botanicalProject, $projectFive, $projectSix, $projectSeven, $projectEight, $marketShareProject, $projectNine, $projectTen, $projectEleven, $projectTwelve, $guitarMonthlyProject, $projectThirteen, $projectFourteen, $projectFifteen, $projectSixteen, $projectSeventeen, $dashProject,  $projectNineteen, $projectTwenty
 ]
 
 ?>
