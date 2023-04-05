@@ -2,16 +2,16 @@
 <html lang="en">
     <?php 
     @require_once("../app/init.php");
-    $titleTag = "BottleShooter Project";
-    $metaDescription = "A bottle shooting html, and css game on desktop only.";
+    $titleTag = "Botanical Gardens";
+    $metaDescription = "An online gardening store application prototype.";
     ?>
 
 <?php 
-$Projects = $ProjectsArray[4];
-$projectOne = $ProjectsArray[5];
-$projectTwo = $ProjectsArray[6];
-$projectThree = $ProjectsArray[7];
-$projectFour = $ProjectsArray[8];
+$Projects = $ProjectsArray[3];
+$projectOne = $ProjectsArray[4];
+$projectTwo = $ProjectsArray[5];
+$projectThree = $ProjectsArray[6];
+$projectFour = $ProjectsArray[7];
 @require("partials/head.php");
 ?>
 <body class="project__item">
@@ -30,7 +30,7 @@ $projectFour = $ProjectsArray[8];
                 <h3 class="text__md  font__spacegrotesk--700"><?php echo($projectOne->projectSectionHeading2)?>:</h3>
                 <div class="image__container rounded filter__shadow">
                     <svg viewBox="0 0 463.04 695.37" preserveAspectRatio="xMidYMid meet">
-                        <image id="styleguide__botanical" href="img/project-botanical__styleguide.svg" width="463.04" height="695.37" />
+                        <image href="img/project-botanical__styleguide.svg" width="463.04" height="695.37" />
                     </svg>
                 </div>
             </div>

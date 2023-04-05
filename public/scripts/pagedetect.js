@@ -23,6 +23,9 @@ function moveUnderscore(){
     else if (loadedPage == "/public/" && screenWidth > 940 || loadedPage == "/index.php" && screenWidth > 940) {
         menuUnderscore.style.right = "13.425em";
     }
+    else if (screenWidth > 940) {
+        menuUnderscore.style.right = "7.5em";
+    }
 }
 
 window.addEventListener("resize", () => {

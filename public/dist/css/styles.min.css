@@ -856,6 +856,9 @@ body {
   grid-column: auto/span 6;
 }
 
+.font__uppercase {
+  text-transform: uppercase;
+}
 .font__staatliches {
   font-family: "Staatliches", cursive;
   letter-spacing: 0.06em;

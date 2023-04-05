@@ -37,6 +37,9 @@ body {
 
 
 .font {
+    &__uppercase {
+        text-transform: uppercase;
+    }
 
     &__staatliches {
         font-family: 'Staatliches', cursive;
@@ -264,7 +267,4 @@ Spacing
         font-size: 2em;
     }
 }
-
-
-
 
