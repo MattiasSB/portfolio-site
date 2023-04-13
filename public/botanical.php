@@ -4,6 +4,11 @@
     @require_once("../app/init.php");
     $titleTag = "Botanical Gardens";
     $metaDescription = "An online gardening store application prototype.";
+    $metaOGTitle = 'Botanical - Portfolio - Mattias Bellan';
+    $metaOGImage = 'https://mattiasbellan.ca/public/img/og_botanical.webp';
+    $metaOGDescription = 'Check out my botanical interactive prototype project.';
+    $metaOGType = 'website';
+    $metaOGUrl = 'https://mattiasbellan.ca/public/botanical.php';
     ?>
 
 <?php 

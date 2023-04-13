@@ -4,6 +4,11 @@
     @require_once("../app/init.php");
     $titleTag = "Home";
     $metaDescription = "Junior Designer, and Developer portfolio. Heres an amalgamation of my work and a little about me";
+    $metaOGTitle = 'Home - Portfolio - Mattias Bellan';
+    $metaOGImage = 'https://mattiasbellan.ca/public/img/og_home.webp';
+    $metaOGDescription = 'Check out my online portfolio to see some of my projects as a developer/designer.';
+    $metaOGType = 'website';
+    $metaOGUrl = 'https://mattiasbellan.ca/';
     ?>
 
 <?php 

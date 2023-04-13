@@ -3,6 +3,11 @@
 <?php 
 $titleTag = "Work";
 $metaDescription = "Here's a list of my design and development work.";
+$metaOGTitle = 'Work - Portfolio - Mattias Bellan';
+$metaOGImage = 'https://mattiasbellan.ca/public/img/og_work.webp';
+$metaOGDescription = 'Check out some of my projects as a developer/designer';
+$metaOGType = 'website';
+$metaOGUrl = 'https://mattiasbellan.ca/public/work.php';
 @require_once("../app/init.php");
 @require("partials/head.php");
 

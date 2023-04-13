@@ -4,6 +4,11 @@
     @require_once("../app/init.php");
     $titleTag = "MarketShare";
     $metaDescription = "A mobile prototype of a online marketplace application";
+    $metaOGTitle = 'MarketShare - Portfolio - Mattias Bellan';
+    $metaOGImage = 'https://mattiasbellan.ca/public/img/og_botanical.webp';
+    $metaOGDescription = 'Check out my MarketShare interactive prototype project.';
+    $metaOGType = 'website';
+    $metaOGUrl = 'https://mattiasbellan.ca/public/marketshare.php';
     ?>
 
 <?php 

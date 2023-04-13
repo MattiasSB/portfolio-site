@@ -4,6 +4,11 @@
     @require_once("../app/init.php");
     $titleTag = "Guitar Monthly";
     $metaDescription = "A Guitar Monthly music magazine design project";
+    $metaOGTitle = 'GuitarMonthly - Portfolio - Mattias Bellan';
+    $metaOGImage = 'https://mattiasbellan.ca/public/img/og_guitarMonthly.webp';
+    $metaOGDescription = 'Check out my Guitar Monthly magazine project';
+    $metaOGType = 'website';
+    $metaOGUrl = 'https://mattiasbellan.ca/public/guitarmonthly.php';
     ?>
 
 <?php 

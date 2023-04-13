@@ -4,6 +4,11 @@
     @require_once("../app/init.php");
     $titleTag = "BottleShooter Project";
     $metaDescription = "A bottle shooting html, and css game on desktop only.";
+    $metaOGTitle = 'Bottle Shooter - Portfolio - Mattias Bellan';
+    $metaOGImage = 'https://mattiasbellan.ca/public/img/og_bottleshooter.webp';
+    $metaOGDescription = 'Check out my Bottle Shooter aim training HTML game.';
+    $metaOGType = 'website';
+    $metaOGUrl = 'https://mattiasbellan.ca/public/bottleshooter.php';
     ?>
 
 <?php 

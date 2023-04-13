@@ -3,6 +3,11 @@
 <?php 
     $metaDescription = "Here's a little more about me, my work as a designer/developer as well as my personal life.";
     $titleTag = "About";
+    $metaOGTitle = 'About - Portfolio - Mattias Bellan';
+    $metaOGImage = 'https://mattiasbellan.ca/public/img/og_about.webp';
+    $metaOGDescription = 'Im Mattias Bellan, a web designer and developer, heres some more information about me';
+    $metaOGType = 'website';
+    $metaOGUrl = 'https://mattiasbellan.ca/public/about.php';
     @require_once("../app/init.php");
     @require("partials/head.php");
     
